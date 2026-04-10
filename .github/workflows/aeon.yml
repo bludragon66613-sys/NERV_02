@@ -44,6 +44,7 @@ on:
           - security-digest
           - session-sync
           - self-review
+          - paperclip-eval
           - skill-eval
           - skill-evolve
           - skill-health
