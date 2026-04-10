@@ -1,0 +1,38 @@
+{
+  "evals": [
+    {
+      "description": "Heartbeat responds HEARTBEAT_OK or alert within 5s",
+      "id": "heartbeat-response",
+      "status": "active",
+      "check": "manual",
+      "threshold_ms": 5000,
+      "type": "latency"
+    },
+    {
+      "description": "Memory sync completes without data loss",
+      "type": "reliability",
+      "status": "active",
+      "path": "~/.claude/memory/",
+      "id": "memory-sync-completes"
+    },
+    {
+      "description": "Every X thread read -> KB article written and committed",
+      "type": "completeness",
+      "status": "active",
+      "id": "kb-article-written"
+    },
+    {
+      "description": "KB updates copied to Obsidian vault within 5 minutes",
+      "type": "latency",
+      "status": "active",
+      "threshold_ms": 300000,
+      "id": "obsidian-synced"
+    },
+    {
+      "description": "SOUL.md and IDENTITY.md unchanged unless explicitly edited",
+      "type": "integrity",
+      "status": "active",
+      "id": "identity-persists"
+    }
+  ]
+}
