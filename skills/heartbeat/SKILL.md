@@ -11,7 +11,11 @@ If `${var}` is set, focus checks on that specific area.
 
 Read these canonical sources for full situational awareness:
 - `memory/MEMORY.md` — current goals, priorities, active topics
+- `memory/relationship/profile.md` — who the user is, communication style, what to never assume
+- `memory/relationship/projects.md` — currently-active user projects, their freshness, what's stalled
+- `memory/relationship/pending.md` — open follow-ups Aeon owes; sweep for items aged > 7 days
 - Last 2 days of `memory/logs/` — recent activity and prior heartbeat findings
+- Last 2 days of `memory/relationship/interactions/` — what user actually did/said recently
 - `memory/topics/` — any topic files referenced in MEMORY.md that have open items
 
 ## 2. Signal Scan
@@ -31,6 +35,12 @@ Check the following signals. For each, record: signal, severity (low/medium/high
 
 **Goal Progress:**
 - [ ] Check goals in MEMORY.md against recent logs — flag any that are stalled > 7 days.
+
+**Project Freshness:**
+- [ ] Read `memory/relationship/projects.md`. Flag any active project with last commit > 7 days old. Flag any stalled project that just became active again (cross-reference with prior heartbeat findings).
+
+**Pending Sweep:**
+- [ ] Read `memory/relationship/pending.md`. For each item aged > 7 days: bump severity, surface in the heartbeat output, suggest a resolution path.
 
 **Memory Flags:**
 - [ ] Anything flagged in memory that needs follow-up? (look for TODO, BLOCKED, WAITING tags)
@@ -67,7 +77,12 @@ Include the routing recommendation in the notification so the principal can disp
 If nothing needs attention after auto-resolution, log "HEARTBEAT_OK" and end.
 
 If something needs attention:
-1. Send ONE concise notification via `./notify` — prioritize by severity (HIGH first)
+1. Send ONE concise notification via `./notify` — prioritize by severity (HIGH first). Use the brevity preference from `relationship/profile.md` — no greetings, no decoration.
 2. Format: `[HEARTBEAT] {severity}: {finding} → {recommended action or skill to run}`
 3. Never send more than 3 items per heartbeat — if more exist, summarize the rest as a count
 4. Log all findings and actions to `memory/logs/${today}.md`
+5. Append a structured entry to `memory/relationship/interactions/${today}.md`:
+   ```
+   ## ${HH:MM} — heartbeat
+   {OK or N findings}. {one-line summary of severity distribution}.
+   ```
