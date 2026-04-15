@@ -144,6 +144,71 @@ jobs:
             echo "No new messages"
           fi
 
+          # Export for the persist step
+          echo "MSG_COUNT=$MSG_COUNT" >> "$GITHUB_ENV"
+          echo "$MESSAGES" > /tmp/aeon-inbound-messages.json
+
+      # Phase 2.5 — persist polled messages into memory/relationship/interactions/
+      # so other skills (heartbeat, weekly-review, self-review, interaction-log)
+      # can read what the user said. Skipped when no messages were collected.
+      - name: Checkout repo for relationship persistence
+        if: env.MSG_COUNT != '0' && env.MSG_COUNT != ''
+        uses: actions/checkout@v5
+        with:
+          token: ${{ secrets.GH_GLOBAL || secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
+
+      - name: Append messages to relationship/interactions
+        if: env.MSG_COUNT != '0' && env.MSG_COUNT != ''
+        run: |
+          set -euo pipefail
+          DAY=$(date -u +%Y-%m-%d)
+          HHMM=$(date -u +%H:%M)
+          DIR="memory/relationship/interactions"
+          FILE="$DIR/$DAY.md"
+          mkdir -p "$DIR"
+
+          # Create the day file with header if it doesn't exist
+          if [ ! -f "$FILE" ]; then
+            cat > "$FILE" <<HEADER
+          # Interactions — $DAY
+
+          > Daily activity log from Aeon's POV. Entries are appended throughout the day by skills (heartbeat, weekly-review, self-review, project-state, messages.yml inbound) and finalized by interaction-log at end-of-day.
+          HEADER
+          fi
+
+          # Append each polled message as a structured entry
+          MESSAGES=$(cat /tmp/aeon-inbound-messages.json)
+          MSG_COUNT=$(echo "$MESSAGES" | jq 'length')
+
+          {
+            echo ""
+            echo "## $HHMM — inbound ($MSG_COUNT message(s))"
+            for ((i=0; i<MSG_COUNT; i++)); do
+              SRC=$(echo "$MESSAGES" | jq -r ".[$i].source")
+              TXT=$(echo "$MESSAGES" | jq -r ".[$i].text")
+              # Escape backticks and limit text length
+              TXT_SAFE=$(echo "$TXT" | head -c 500 | sed 's/`/\\`/g')
+              echo "- **[$SRC]** $TXT_SAFE"
+            done
+          } >> "$FILE"
+
+          # Commit and push
+          git config user.name "bludragon66613-sys"
+          git config user.email "bludragon66613-sys@users.noreply.github.com"
+          git add "$FILE"
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(relationship): inbound +${MSG_COUNT} message(s) ${DAY}T${HHMM}Z"
+            # Retry push up to 3 times in case of concurrent commits
+            for attempt in 1 2 3; do
+              if git push origin HEAD:main; then
+                break
+              fi
+              echo "push attempt $attempt failed, rebasing and retrying..."
+              git pull --rebase origin main
+            done
+          fi
+
   run:
     if: github.event_name == 'repository_dispatch' || (github.event_name == 'workflow_dispatch' && inputs.message != '')
     runs-on: ubuntu-latest
