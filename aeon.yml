@@ -119,6 +119,14 @@ skills:
     schedule: "0 21 * * *"
     outputs: [interaction-rollup]
 
+  # decision-capture scans the day's interactions for stated preferences and
+  # appends new entries to memory/relationship/decisions.md after interaction-log.
+  decision-capture:
+    enabled: true
+    schedule: "30 21 * * *"
+    dependsOn: [interaction-log]
+    outputs: [decisions-captured]
+
   # --- Overnight evolution (2 AM UTC = 7:30 AM IST) ---
   autoevolve:
     enabled: true
