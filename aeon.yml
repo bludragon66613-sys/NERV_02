@@ -127,6 +127,15 @@ skills:
     dependsOn: [interaction-log]
     outputs: [decisions-captured]
 
+  # relationship-eval runs the Phase 2.7 5-check suite (profile-current,
+  # pending-followup, project-freshness, interaction-density, notification-restraint).
+  # Tracks 14-day clean streak as Phase 2 exit criterion.
+  relationship-eval:
+    enabled: true
+    schedule: "0 22 * * *"
+    dependsOn: [decision-capture]
+    outputs: [eval-results]
+
   # --- Overnight evolution (2 AM UTC = 7:30 AM IST) ---
   autoevolve:
     enabled: true

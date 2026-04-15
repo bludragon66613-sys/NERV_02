@@ -31,6 +31,7 @@ Steps:
    - Is `relationship/profile.md` current? Flag if any listed active project has had no GitHub activity in 30 days.
    - Are `pending.md` items being resolved or just accumulating? Count net change over the week.
    - Did any new decisions land in `decisions.md` this week? If so, are they being respected?
+   - **Read `memory/relationship/eval-results.jsonl`** (Phase 2.7 daily eval suite). Count how many of the last 7 days were clean. Compute the current consecutive clean streak (toward the 14-day Phase 2 exit). If the streak reset this week, flag the failing eval as a top finding. If the streak hit 14, celebrate it in the notification.
 4. Audit memory hygiene:
    - Is MEMORY.md current and under 50 lines?
    - Are logs structured consistently?
