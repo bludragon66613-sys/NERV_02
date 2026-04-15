@@ -111,6 +111,14 @@ skills:
     schedule: "0 18 * * *"
     dependsOn: [reflect]
 
+  # --- End-of-day relationship roll-up (21:00 UTC = 02:30 IST) ---
+  # interaction-log finalizes memory/relationship/interactions/${today}.md after
+  # heartbeat, weekly-review, and self-review have already appended their entries.
+  interaction-log:
+    enabled: true
+    schedule: "0 21 * * *"
+    outputs: [interaction-rollup]
+
   # --- Overnight evolution (2 AM UTC = 7:30 AM IST) ---
   autoevolve:
     enabled: true
