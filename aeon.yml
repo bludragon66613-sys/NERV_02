@@ -3,6 +3,14 @@
 # Enable skills by setting enabled: true. Multiple skills at the same time run in parallel.
 
 skills:
+  # --- Pre-morning relationship state (6:30 AM UTC) ---
+  # project-state rebuilds memory/relationship/projects.md before morning-brief runs
+  # so the brief can ground its summary in fresh user-activity data.
+  project-state:
+    enabled: true
+    schedule: "30 6 * * *"
+    outputs: [projects-md]
+
   # --- Morning intel (7 AM UTC) ---
   # rss-digest, hacker-news-digest, paper-digest, tweet-digest run first (no deps).
   # morning-brief waits for all four, then synthesizes a single briefing.
