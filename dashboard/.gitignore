@@ -5,3 +5,7 @@ node_modules/
 .vercel
 .cache/
 .jobs/
+.gitnexus
+.omc/
+.agents/skills/
+tsconfig.tsbuildinfo
