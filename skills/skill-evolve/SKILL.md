@@ -1,9 +1,10 @@
 ---
 name: Skill Evolve
-description: Autonomous skill improvement loop — picks the lowest-scored skill, hypothesizes one change, applies it on a branch, re-evaluates, and keeps or reverts based on score delta. Modelled on karpathy/autoresearch.
+description: Autonomous skill improvement loop — picks the lowest-scored skill, hypothesizes one change, applies it on a branch, re-evaluates, and keeps or reverts based on score delta. Enhanced with autoagent patterns (results tracking, failure analysis, overfitting guard).
 var: ""
 ---
 > **${var}** — Skill name to evolve. If empty, picks the lowest-scored skill automatically.
+> Append `--loop` to run continuously until interrupted (e.g. `morning-brief --loop`).
 
 Run one iteration of the skill evolution loop.
 
@@ -15,7 +16,9 @@ Run one iteration of the skill evolution loop.
    - If it does not exist or has fewer than 3 entries, run `skill-eval` on 3 core skills
      first: `morning-brief`, `self-review`, `skill-health`. Then re-read scores.
 2. Read `memory/topics/skill-evolution.md` if it exists (evolution history log).
-3. Read `memory/MEMORY.md` for current goals.
+3. Read `~/autoagent/results/results.tsv` if it exists (cross-system results tracking).
+4. Read `~/autoagent/benchmarks/skill-benchmarks.json` for failure mode awareness.
+5. Read `memory/MEMORY.md` for current goals.
 
 ---
 
@@ -45,8 +48,24 @@ Identify the **single weakest dimension** from its most recent score:
 - If efficiency is lowest → look for redundant fetches, repeated steps, bloated prompts
 - If specificity is lowest → look for vague output descriptions or missing format examples
 
+### Failure analysis (autoagent pattern)
+Check `~/autoagent/benchmarks/skill-benchmarks.json` for known failure modes of this skill.
+Also check the evolution log for past failed hypotheses on this skill — do not repeat them.
+
+Classify the weakness:
+- **Missing capability** — skill lacks a step to handle a common scenario
+- **Weak verification** — skill doesn't check its own output
+- **Prompt bloat** — instructions are longer than needed
+- **Vague output** — no concrete examples of expected output
+- **Silent failure** — skill can fail without reporting it
+- **Missing error handling** — known failure mode not addressed
+
 Write a one-sentence hypothesis:
 > "Hypothesis: Adding [specific change] to [section] will improve [dimension] because [reason]."
+
+### Overfitting guard (autoagent pattern)
+Before applying, check: "If the benchmark task that exposed this weakness disappeared,
+would this still be a worthwhile improvement?" If no, find a more general fix.
 
 **Constraint: make exactly one change per evolution iteration.**
 Do not rewrite the whole skill — surgical edits only.
@@ -131,15 +150,24 @@ Append to `memory/topics/skill-evolution.md` (create if missing):
 
 - **Hypothesis:** <your hypothesis>
 - **Change:** <one-line description of what was changed>
+- **Weakness class:** <missing_capability|weak_verification|prompt_bloat|vague_output|silent_failure|missing_error_handling>
 - **Baseline:** ${baseline_score} (C:${c} E:${e} S:${s}) on ${baseline_date}
 - **New score:** ${new_composite} (C:${nc} E:${ne} S:${ns})
 - **Delta:** ${new_composite - baseline_score:+.2f}
 - **Outcome:** KEEP ✅ / DISCARD ❌ / NOTE 📝
 - **Reason:** <why you made this decision>
+- **Learning:** <what signal this provides for future iterations>
 ```
 
 Also append a new entry to `memory/topics/skill-scores.json` with the post-eval score
 (regardless of outcome — the history is valuable either way).
+
+### Cross-system results tracking (autoagent pattern)
+Also append to `~/autoagent/results/results.tsv`:
+```
+${date}\t${target_skill}\tskill\t${baseline_score}\t${new_composite}\t${delta}\t${outcome}\t${hypothesis}\t${description}
+```
+This enables unified tracking across skill-evolve and autoagent runs.
 
 ---
 
@@ -159,10 +187,25 @@ Score: ${baseline_score} → ${new_composite} (${outcome})
 
 ---
 
+## Continuous mode (--loop)
+
+If `${var}` contains `--loop`, after completing one iteration:
+1. Do NOT stop or ask whether to continue
+2. Return to Step 1 and select the next target
+3. Continue until explicitly interrupted
+4. Sleep 10 seconds between iterations to avoid rate limits
+
+This enables overnight autonomous improvement runs.
+
+---
+
 ## Guardrails
 
-- Never modify `aeon.yml`, `skill-eval/SKILL.md`, or `skill-evolve/SKILL.md` — these are the locked harness
+- Never modify `aeon.yml`, `skill-eval/SKILL.md`, `skill-evolve/SKILL.md`, or `autoagent/SKILL.md` — these are the locked harness
 - Never change the eval rubric thresholds
 - One change per run — resist the urge to "fix everything"
+- No overfitting: "If this benchmark disappeared, would this still help?" — if no, skip it
+- Prefer changes that fix a class of issues, not a single case
 - If git operations fail, log the error and exit cleanly without leaving a dirty branch
 - If `skill-scores.json` is missing scores for the target skill, run `skill-eval ${target_skill}` first, then proceed
+- Even discarded experiments provide learning signal — always record what was learned
