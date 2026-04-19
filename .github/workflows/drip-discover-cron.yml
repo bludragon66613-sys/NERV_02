@@ -1,0 +1,148 @@
+name: Drip Discover Cron
+run-name: "drip-discover: ${{ github.event.schedule || 'manual' }}"
+
+on:
+  schedule:
+    - cron: '0 6,14,22 * * *'  # 06:00, 14:00, 22:00 UTC — 3x/day
+  workflow_dispatch:
+    inputs:
+      target_class:
+        description: 'Function class override (empty = rotate by day-of-year)'
+        required: false
+        default: ''
+        type: string
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    env:
+      DRIP_AGENT_API_KEY: ${{ secrets.DRIP_AGENT_API_KEY }}
+      DRIP_AGENT_API_URL: ${{ vars.DRIP_AGENT_API_URL || 'https://drip.markets/api/agents/generate' }}
+
+    steps:
+      - name: Checkout aeon
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_GLOBAL || secrets.GITHUB_TOKEN }}
+
+      - name: Pick class
+        id: pick
+        run: |
+          OVERRIDE="${{ inputs.target_class }}"
+          if [ -n "$OVERRIDE" ]; then
+            CLASS="$OVERRIDE"
+          else
+            CLASSES=(
+              cosmetic_collagen_stimulating
+              cosmetic_antiaging_neuromodulator
+              cosmetic_antiwrinkle_lifting
+              cosmetic_wound_healing
+              cosmetic_brightening_depigmentation
+              cosmetic_antimicrobial_skin
+              cosmetic_antiinflammatory_skin
+              cosmetic_barrier_moisturizing
+              cosmetic_hair_growth
+              cosmetic_eye_area
+              cosmetic_lip
+              cosmetic_postprocedure
+              cosmetic_cell_penetrating
+              cosmetic_sensory
+              cosmetic_longevity_adjacent
+            )
+            DOY=$(date -u +%j)
+            IDX=$(( (10#$DOY) % ${#CLASSES[@]} ))
+            CLASS="${CLASSES[$IDX]}"
+          fi
+          echo "class=$CLASS" >> "$GITHUB_OUTPUT"
+          echo "Picked: $CLASS"
+
+      - name: Generate candidate
+        id: gen
+        run: |
+          if [ -z "$DRIP_AGENT_API_KEY" ]; then
+            echo "::error::DRIP_AGENT_API_KEY secret missing"
+            exit 1
+          fi
+
+          mkdir -p memory/logs memory/topics
+
+          BODY=$(jq -n \
+            --arg cls "${{ steps.pick.outputs.class }}" \
+            '{target_class: $cls, n: 5, min_len: 3, max_len: 20}')
+
+          RESP=$(curl -sS -X POST "$DRIP_AGENT_API_URL" \
+            -H "content-type: application/json" \
+            -H "x-drip-api-key: $DRIP_AGENT_API_KEY" \
+            -d "$BODY") || { echo "::error::curl failed"; exit 1; }
+
+          echo "$RESP" > /tmp/drip_resp.json
+          OK=$(jq -r '.ok' /tmp/drip_resp.json)
+          if [ "$OK" != "true" ]; then
+            echo "::error::API returned not-ok: $(jq -r '.error // "unknown"' /tmp/drip_resp.json)"
+            exit 1
+          fi
+
+          SEQ=$(jq -r '.data.candidates[0].sequence' /tmp/drip_resp.json)
+          RANK=$(jq -r '.data.candidates[0].scores.rank' /tmp/drip_resp.json)
+          ID=$(jq -r '.data.candidates[0].id' /tmp/drip_resp.json)
+          CLAIM=$(jq -r '.data.candidates[0].claim_language' /tmp/drip_resp.json)
+
+          echo "seq=$SEQ"   >> "$GITHUB_OUTPUT"
+          echo "rank=$RANK" >> "$GITHUB_OUTPUT"
+          echo "id=$ID"     >> "$GITHUB_OUTPUT"
+          echo "claim=$CLAIM" >> "$GITHUB_OUTPUT"
+
+          DATE=$(date -u +%Y-%m-%d)
+          HOUR=$(date -u +%H)
+          cp /tmp/drip_resp.json "memory/logs/${DATE}-${HOUR}00-drip-discover.json"
+
+          {
+            echo "${DATE} · ${SEQ} · ${{ steps.pick.outputs.class }} · rank ${RANK} · ${ID}"
+          } >> memory/topics/drip.md
+
+      - name: Commit log
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add memory/logs/*-drip-discover.json memory/topics/drip.md 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "drip-discover: ${{ steps.gen.outputs.seq }} · ${{ steps.pick.outputs.class }} · rank ${{ steps.gen.outputs.rank }}"
+          git push || true
+
+      - name: Notify Telegram
+        if: env.TELEGRAM_BOT_TOKEN != '' && env.TELEGRAM_CHAT_ID != ''
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          MSG="💧 *drip ships ${{ steps.gen.outputs.seq }}*
+
+          class: \`${{ steps.pick.outputs.class }}\`
+          rank: *${{ steps.gen.outputs.rank }}/100*
+          id: \`${{ steps.gen.outputs.id }}\`
+
+          claim: _${{ steps.gen.outputs.claim }}_
+
+          https://drip.markets/discoveries/${{ steps.gen.outputs.id }}"
+
+          curl -sf -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            -H "Content-Type: application/json" \
+            -d "$(jq -n \
+              --arg chat "$TELEGRAM_CHAT_ID" \
+              --arg text "$MSG" \
+              '{chat_id: $chat, text: $text, parse_mode: "Markdown"}')" > /dev/null
+
+      - name: Notify on failure
+        if: failure() && env.TELEGRAM_BOT_TOKEN != '' && env.TELEGRAM_CHAT_ID != ''
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          curl -sf -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            -H "Content-Type: application/json" \
+            -d "$(jq -n \
+              --arg chat "$TELEGRAM_CHAT_ID" \
+              --arg text "⚠️ drip-discover FAILED at $(date -u +%Y-%m-%dT%H:%M)Z. Class: ${{ steps.pick.outputs.class }}" \
+              '{chat_id: $chat, text: $text}')" > /dev/null || true
