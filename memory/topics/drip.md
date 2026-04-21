@@ -6,3 +6,4 @@
 2026-04-20 · RPTYFLGHFQ · cosmetic_antimicrobial_skin · rank 84 · drp-319424-03
 2026-04-21 · MPGWISVFLHVMVG · cosmetic_antiinflammatory_skin · rank 84 · drp-941623-03
 2026-04-21 · IIR · cosmetic_antiinflammatory_skin · rank 80 · drp-780059-01
+2026-04-21 · KIGVPL · cosmetic_antiinflammatory_skin · rank 85 · drp-528422-00
