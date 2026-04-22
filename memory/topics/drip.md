@@ -8,3 +8,4 @@
 2026-04-21 · IIR · cosmetic_antiinflammatory_skin · rank 80 · drp-780059-01
 2026-04-21 · KIGVPL · cosmetic_antiinflammatory_skin · rank 85 · drp-528422-00
 2026-04-22 · SCLFKI · cosmetic_barrier_moisturizing · rank 82 · drp-235624-01
+2026-04-22 · LLNQ · cosmetic_barrier_moisturizing · rank 82 · drp-193360-00
