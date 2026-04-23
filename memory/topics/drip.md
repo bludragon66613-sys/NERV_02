@@ -12,3 +12,4 @@
 2026-04-22 · KRFIKGPMPHSVRN · cosmetic_barrier_moisturizing · rank 78 · drp-404540-01
 2026-04-23 · TIAWCIA · cosmetic_hair_growth · rank 81 · drp-752445-02
 2026-04-23 · TSQDQYTDLGI · cosmetic_hair_growth · rank 80 · drp-168020-02
+2026-04-23 · TVAYAYEWCTVILM · cosmetic_hair_growth · rank 79 · drp-519177-00
