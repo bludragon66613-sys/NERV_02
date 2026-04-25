@@ -16,3 +16,4 @@
 2026-04-24 · FMDTISWDNCKMLIYQ · cosmetic_eye_area · rank 80 · drp-735093-02
 2026-04-24 · LPMHFRWVAPDVNVQ · cosmetic_eye_area · rank 85 · drp-814698-02
 2026-04-24 · FHYDCSRA · cosmetic_eye_area · rank 82 · drp-815638-01
+2026-04-25 · TSGDNLEDVWQF · cosmetic_lip · rank 85 · drp-414672-02
