@@ -22,3 +22,4 @@
 2026-04-26 · NETGTLS · cosmetic_postprocedure · rank 82 · drp-651422-00
 2026-04-26 · FIMY · cosmetic_postprocedure · rank 82 · drp-105158-00
 2026-04-26 · DFCLFGFAHDLWRDPDC · cosmetic_postprocedure · rank 88 · drp-283306-01
+2026-04-27 · TFCDLNNSCCTQ · cosmetic_cell_penetrating · rank 79 · drp-859699-02
