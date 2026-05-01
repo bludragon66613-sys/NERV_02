@@ -36,3 +36,4 @@
 2026-04-30 · QVWHHLITKR · cosmetic_collagen_stimulating · rank 83 · drp-743192-04
 2026-05-01 · PFM · cosmetic_antiaging_neuromodulator · rank 84 · drp-219429-04
 2026-05-01 · PWSAR · cosmetic_antiaging_neuromodulator · rank 84 · drp-666454-02
+2026-05-01 · GEIFIAWTVHWQRNR · cosmetic_antiaging_neuromodulator · rank 87 · drp-102423-01
