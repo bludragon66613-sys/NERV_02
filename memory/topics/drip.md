@@ -38,3 +38,4 @@
 2026-05-01 · PWSAR · cosmetic_antiaging_neuromodulator · rank 84 · drp-666454-02
 2026-05-01 · GEIFIAWTVHWQRNR · cosmetic_antiaging_neuromodulator · rank 87 · drp-102423-01
 2026-05-02 · GEKQNKRGRDIQKE · cosmetic_antiwrinkle_lifting · rank 81 · drp-198103-04
+2026-05-02 · TIHQNAEAWHIFIYDIMTKT · cosmetic_antiwrinkle_lifting · rank 90 · drp-785758-02
