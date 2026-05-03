@@ -40,3 +40,4 @@
 2026-05-02 · GEKQNKRGRDIQKE · cosmetic_antiwrinkle_lifting · rank 81 · drp-198103-04
 2026-05-02 · TIHQNAEAWHIFIYDIMTKT · cosmetic_antiwrinkle_lifting · rank 90 · drp-785758-02
 2026-05-02 · YTWGQR · cosmetic_antiwrinkle_lifting · rank 82 · drp-834533-01
+2026-05-03 · PAIGGEITPVPSKVQLISVM · cosmetic_wound_healing · rank 81 · drp-211687-02
