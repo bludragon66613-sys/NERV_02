@@ -51,3 +51,4 @@
 2026-05-05 · DRHNYQYEVSEQMWH · cosmetic_antimicrobial_skin · rank 81 · drp-976669-02
 2026-05-06 · EPTMYMFNRPDM · cosmetic_antiinflammatory_skin · rank 82 · drp-975962-02
 2026-05-06 · QLHRKIGLYN · cosmetic_antiinflammatory_skin · rank 84 · drp-045678-03
+2026-05-07 · DLNYFMHRNRLC · cosmetic_barrier_moisturizing · rank 86 · drp-398204-02
