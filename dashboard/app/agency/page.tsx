@@ -1,5 +1,6 @@
 'use client'
 import { apiFetch } from '@/lib/client-auth'
+import Link from 'next/link'
 import { useState, useEffect, useRef, useCallback } from 'react'
 
 // ─── Types ───────────────────────────────────────────────────────────────────
@@ -256,11 +257,11 @@ export default function AgencyPage() {
 
       {/* Header */}
       <div style={{ borderBottom: '1px solid #1c2230', padding: '16px 24px', display: 'flex', alignItems: 'center', gap: 16 }}>
-        <a href="/" style={{ color: '#f59e0b', textDecoration: 'none', fontSize: 11, letterSpacing: 2 }}>← NERV_02</a>
+        <Link href="/" style={{ color: '#f59e0b', textDecoration: 'none', fontSize: 11, letterSpacing: 2 }}>← NERV_02</Link>
         <div style={{ flex: 1 }} />
         <div style={{ fontSize: 13, fontWeight: 700, letterSpacing: 4, color: '#f59e0b' }}>◈ NEXUS COMMAND CENTER</div>
         <div style={{ flex: 1 }} />
-        <a href="/agents" style={{ fontSize: 10, letterSpacing: 2, color: '#4488ff', border: '1px solid #4488ff44', padding: '4px 10px', textDecoration: 'none' }}>◈ AGENTS</a>
+        <Link href="/agents" style={{ fontSize: 10, letterSpacing: 2, color: '#4488ff', border: '1px solid #4488ff44', padding: '4px 10px', textDecoration: 'none' }}>◈ AGENTS</Link>
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 340px', gap: 0, minHeight: 'calc(100vh - 57px)' }}>

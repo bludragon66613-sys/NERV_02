@@ -122,7 +122,7 @@ export function topologicalSort(nodes: WorkflowNode[]): string[][] {
 
     if (wave.length === 0) {
       // Cycle detected — collect remaining nodes
-      const remaining = nodes.filter(n => !visited.has(n.id)).map(n => n.id)
+      const remaining = nodes.flatMap(n => visited.has(n.id) ? [] : [n.id])
       throw new Error(`Cycle detected in workflow DAG involving nodes: ${remaining.join(', ')}`)
     }
 
@@ -243,7 +243,7 @@ export function createWorkflowRun(def: WorkflowDefinition): WorkflowRun {
 export function getNextExecutableNodes(run: WorkflowRun, def: WorkflowDefinition): WorkflowRunNode[] {
   const { nodeMap } = compileWorkflow(def)
   const completedNodeIds = new Set(
-    run.nodes.filter(n => n.status === 'completed').map(n => n.nodeId)
+    run.nodes.flatMap(n => n.status === 'completed' ? [n.nodeId] : [])
   )
 
   return run.nodes.filter(n => {

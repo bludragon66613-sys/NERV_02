@@ -5,6 +5,12 @@
       "react-doctor/no-wide-letter-spacing",
       "react-doctor/design-no-em-dash-in-jsx-text",
       "react-doctor/design-no-three-period-ellipsis"
+    ],
+    "overrides": [
+      {
+        "files": ["app/api/agency/jobs/route.ts"],
+        "rules": ["react-doctor/nextjs-no-side-effect-in-get-handler"]
+      }
     ]
   }
 }

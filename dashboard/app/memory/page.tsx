@@ -1,6 +1,6 @@
 'use client'
 import { apiFetch } from '@/lib/client-auth'
-
+import Link from 'next/link'
 import { useState, useEffect, useCallback } from 'react'
 
 // ─── TYPES ────────────────────────────────────────────────────────────────────
@@ -227,9 +227,9 @@ export default function MemoryPage() {
         >
           ↺ REFRESH
         </button>
-        <a href="/" style={{ color: C.textDim, fontSize: 10, textDecoration: 'none' }}>
+        <Link href="/" style={{ color: C.textDim, fontSize: 10, textDecoration: 'none' }}>
           ← BACK
-        </a>
+        </Link>
       </div>
 
       {/* Filter bar */}

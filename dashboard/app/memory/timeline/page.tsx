@@ -1,5 +1,6 @@
 'use client'
 import { apiFetch } from '@/lib/client-auth'
+import Link from 'next/link'
 import { useState, useEffect, useCallback, useRef } from 'react'
 
 // ─── TYPES ────────────────────────────────────────────────────────────────────
@@ -300,12 +301,12 @@ export default function TimelinePage() {
           {typeFilter !== 'all' && ` · ${typeCounts[typeFilter] ?? 0} ${typeFilter}`}
         </span>
         <div style={{ flex: 1 }} />
-        <a href="/memory" style={{ color: C.textDim, fontSize: 10, textDecoration: 'none' }}>
+        <Link href="/memory" style={{ color: C.textDim, fontSize: 10, textDecoration: 'none' }}>
           ◈ MEMORY
-        </a>
-        <a href="/" style={{ color: C.textDim, fontSize: 10, textDecoration: 'none' }}>
+        </Link>
+        <Link href="/" style={{ color: C.textDim, fontSize: 10, textDecoration: 'none' }}>
           ← BACK
-        </a>
+        </Link>
       </div>
 
       {/* Filter bar */}
