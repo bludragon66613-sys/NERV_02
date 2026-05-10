@@ -82,7 +82,10 @@ function MemoryCard({
   const meta = TYPE_META[file.type] ?? TYPE_META.user
   return (
     <div
+      role="button"
+      tabIndex={0}
       onClick={onClick}
+      onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onClick() } }}
       style={{
         background: selected ? `${meta.color}08` : C.bgPanel,
         border: `1px solid ${selected ? meta.color + '44' : C.border}`,
@@ -163,7 +166,7 @@ export default function MemoryPage() {
   const [search, setSearch] = useState('')
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
-  const [lastRefresh, setLastRefresh] = useState(Date.now())
+  const [lastRefresh, setLastRefresh] = useState(() => Date.now())
 
   const load = useCallback(async () => {
     try {

@@ -118,7 +118,10 @@ function ObsCard({
     >
       {/* Row */}
       <div
+        role="button"
+        tabIndex={0}
         onClick={onToggle}
+        onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onToggle() } }}
         style={{
           display: 'flex', alignItems: 'flex-start', gap: 10,
           padding: '8px 8px 8px 0', cursor: 'pointer',
@@ -168,8 +171,7 @@ function ObsCard({
               </div>
               <ul style={{ margin: 0, padding: '0 0 0 16px', display: 'flex', flexDirection: 'column', gap: 3 }}>
                 {facts.map((f, i) => (
-                  // react-doctor-disable-next-line react-doctor/no-array-index-as-key
-                  // fact strings are free-form text and may not be unique within one observation
+                  // react-doctor-disable-next-line react-doctor/no-array-index-as-key -- free-form fact strings may not be unique
                   <li key={i} style={{ color: C.text, fontSize: 11, lineHeight: 1.5 }}>{f}</li>
                 ))}
               </ul>

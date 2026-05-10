@@ -26,3 +26,4 @@ jobs:
           directory: dashboard
           diff: main
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          fail-on: warning

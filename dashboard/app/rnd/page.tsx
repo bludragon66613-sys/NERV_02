@@ -17,7 +17,7 @@ interface Memo {
 
 // ─── MARKDOWN RENDERER ───────────────────────────────────────────────────────
 
-function renderMarkdown(md: string) {
+function MarkdownRenderer({ md }: { md: string }) {
   const lines = md.split('\n')
   const elements: React.ReactNode[] = []
   let i = 0
@@ -149,7 +149,7 @@ function renderMarkdown(md: string) {
     i++
   }
 
-  return elements
+  return <>{elements}</>
 }
 
 // ─── MAIN PAGE ────────────────────────────────────────────────────────────────
@@ -252,8 +252,10 @@ export default function RndPage() {
 
       {/* ── DISPATCH MODAL ── */}
       {showDispatch && (
+        /* react-doctor-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions */
         <div style={{ position: 'fixed', inset: 0, background: '#00000088', zIndex: 50, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
           onClick={() => setShowDispatch(false)}>
+          {/* react-doctor-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions */}
           <div style={{ background: C.bgPanel, border: `1px solid ${C.cyan}44`, padding: 28, width: 420, maxWidth: '90vw' }}
             onClick={e => e.stopPropagation()}>
             <div style={{ color: C.cyan, fontSize: 12, letterSpacing: 2, fontWeight: 700, marginBottom: 20 }}>◈ CONVENE R&D COUNCIL</div>
@@ -325,7 +327,10 @@ export default function RndPage() {
             {memos.map(m => (
               <div
                 key={m.filename}
+                role="button"
+                tabIndex={0}
                 onClick={() => setSelected(m)}
+                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setSelected(m) } }}
                 style={{
                   padding: '12px 14px',
                   borderBottom: `1px solid ${C.border}`,
@@ -371,7 +376,7 @@ export default function RndPage() {
 
               {/* Memo content */}
               <div style={{ flex: 1, overflowY: 'auto', padding: '20px 28px' }}>
-                {renderMarkdown(selected.body)}
+                <MarkdownRenderer md={selected.body} />
               </div>
             </>
           )}

@@ -1,7 +1,7 @@
 'use client'
 import { apiFetch } from '@/lib/client-auth'
 
-import { useState, useEffect, useCallback, useRef } from 'react'
+import { useState, useEffect, useCallback, useRef, useReducer } from 'react'
 import type { RiskParams, Strategy, ConsensusItem, IntelData } from '@/lib/types'
 import { fmtPrice, fmtM, pct, fgColor, biasColor, dirColor, convColor } from '@/lib/utils'
 
@@ -88,8 +88,9 @@ function StratCard({ s, rank }: { s: Strategy; rank: number }) {
   const dColor = dirColor(s.direction)
 
   return (
-    <div
-      className="border rounded-lg overflow-hidden cursor-pointer transition-all duration-200 hover:border-[#3a3a3a] group"
+    <button
+      type="button"
+      className="border rounded-lg overflow-hidden cursor-pointer transition-all duration-200 hover:border-[#3a3a3a] group w-full text-left bg-transparent p-0"
       style={{ borderColor: open ? '#2a2a2a' : '#1e1e1e', background: '#0d0d0d' }}
       onClick={() => setOpen(o => !o)}
     >
@@ -144,8 +145,7 @@ function StratCard({ s, rank }: { s: Strategy; rank: number }) {
 
         {/* Reasons */}
         {s.reasons.slice(0, 2).map((r, i) => (
-          // react-doctor-disable-next-line react-doctor/no-array-index-as-key
-          // reason strings are not unique — same text can repeat across strategies
+          // react-doctor-disable-next-line react-doctor/no-array-index-as-key -- reason strings are not unique
           <div key={i} className="flex items-start gap-1.5 mt-1.5">
             <span className="text-[#d98310] text-[10px] mt-0.5 shrink-0">›</span>
             <span className="text-[11px] font-mono text-[#9ca3af]">{r}</span>
@@ -162,8 +162,7 @@ function StratCard({ s, rank }: { s: Strategy; rank: number }) {
 
           {/* Remaining reasons */}
           {s.reasons.slice(2).map((r, i) => (
-            // react-doctor-disable-next-line react-doctor/no-array-index-as-key
-            // reason strings are not unique — same text can repeat across strategies
+            // react-doctor-disable-next-line react-doctor/no-array-index-as-key -- reason strings are not unique
             <div key={i} className="flex items-start gap-1.5">
               <span className="text-[#d98310] text-[10px] mt-0.5 shrink-0">›</span>
               <span className="text-[11px] font-mono text-[#9ca3af]">{r}</span>
@@ -215,7 +214,7 @@ function StratCard({ s, rank }: { s: Strategy; rank: number }) {
           )}
         </div>
       )}
-    </div>
+    </button>
   )
 }
 
@@ -298,7 +297,7 @@ export default function IntelPage() {
   const [error, setError] = useState<string | null>(null)
   const [lastFetch, setLastFetch] = useState<Date | null>(null)
   const [tab, setTab] = useState<Tab>('strategies')
-  const [tick, setTick] = useState(0)
+  const [, forceUpdate] = useReducer((n: number) => n + 1, 0)
 
   const fetch = useCallback(async () => {
     setLoading(true)
@@ -319,7 +318,7 @@ export default function IntelPage() {
   useEffect(() => {
     fetch()
     const refresh = setInterval(fetch, 5 * 60 * 1000)
-    const clock = setInterval(() => setTick(t => t + 1), 1000)
+    const clock = setInterval(forceUpdate, 1000)
     return () => { clearInterval(refresh); clearInterval(clock) }
   }, [fetch])
 
@@ -407,6 +406,7 @@ export default function IntelPage() {
           <div className="text-[#d98310] text-xs font-mono animate-pulse tracking-widest">SCANNING MARKETS...</div>
           <div className="flex gap-1">
             {[0, 1, 2, 3, 4].map(i => (
+              // react-doctor-disable-next-line react-doctor/no-array-index-as-key -- static animation bars, never reorders
               <div key={i} className="w-1 bg-[#d98310] rounded-full animate-bounce" style={{ height: 12 + i * 6, animationDelay: `${i * 0.1}s` }} />
             ))}
           </div>
