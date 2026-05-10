@@ -1,6 +1,6 @@
 'use client'
 import { apiFetch } from '@/lib/client-auth'
-
+import Link from 'next/link'
 import { useState, useEffect, useRef, useCallback } from 'react'
 import type { Skill, Run, RiskParams, Strategy, ConsensusItem, IntelData } from '@/lib/types'
 import { C, SKILL_GROUPS, GROUP_COLORS } from '@/lib/theme'
@@ -757,9 +757,9 @@ function WorkflowPanel() {
                 <div style={{ marginTop: 16 }}>
                   <div style={{ fontFamily: 'monospace', fontSize: 7, letterSpacing: 2, color: C.cyan, marginBottom: 6 }}>SCRATCHBOARD</div>
                   <div style={{ padding: '8px 12px', background: `${C.cyan}08`, border: `1px solid ${C.cyan}30`, fontFamily: 'monospace', fontSize: 8, color: C.text, whiteSpace: 'pre-wrap', lineHeight: 1.6, maxHeight: 200, overflowY: 'auto' }}>
-                    {Object.entries(activeRun.scratchboard).filter(([k]) => !k.startsWith('_')).map(([k, v]) => (
+                    {Object.entries(activeRun.scratchboard).flatMap(([k, v]) => k.startsWith('_') ? [] : [
                       <div key={k}><span style={{ color: C.cyan }}>{k}:</span> {typeof v === 'object' ? JSON.stringify(v) : String(v)}</div>
-                    ))}
+                    ])}
                   </div>
                 </div>
               )}
@@ -1119,7 +1119,7 @@ export default function NervPage() {
 
         <Clock />
 
-        <a href="/" style={{ color: C.textDim, fontSize: 8, letterSpacing: 2, textDecoration: 'none', border: `1px solid ${C.borderHi}`, padding: '4px 10px' }}>◀ DASH</a>
+        <Link href="/" style={{ color: C.textDim, fontSize: 8, letterSpacing: 2, textDecoration: 'none', border: `1px solid ${C.borderHi}`, padding: '4px 10px' }}>◀ DASH</Link>
       </div>
 
       {/* ── 3-column layout ── */}

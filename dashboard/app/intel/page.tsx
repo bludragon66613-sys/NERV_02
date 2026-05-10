@@ -253,7 +253,7 @@ function Tile({ label, value, sub, color, pulse }: { label: string; value: strin
     <div className="bg-[#0d0d0d] border border-[#1e1e1e] rounded-lg p-4 flex flex-col gap-1">
       <div className="text-[9px] font-mono text-[#4b5563] uppercase tracking-[0.15em]">{label}</div>
       <div className="flex items-center gap-2">
-        {pulse && <div className="w-1.5 h-1.5 rounded-full animate-pulse shrink-0" style={{ background: color || '#d98310' }} />}
+        {pulse && <div className="size-1.5 rounded-full animate-pulse shrink-0" style={{ background: color || '#d98310' }} />}
         <span className="text-sm font-mono font-bold leading-none" style={{ color: color || '#f5f5f0' }}>{value}</span>
       </div>
       {sub && <div className="text-[10px] font-mono text-[#4b5563] mt-0.5">{sub}</div>}
@@ -344,8 +344,8 @@ export default function IntelPage() {
           <div className="flex items-center gap-3">
             <div className="flex items-center gap-2">
               <div className="relative">
-                <div className="w-2 h-2 rounded-full bg-[#d98310]" />
-                <div className="absolute inset-0 w-2 h-2 rounded-full bg-[#d98310] animate-ping opacity-40" />
+                <div className="size-2 rounded-full bg-[#d98310]" />
+                <div className="absolute inset-0 size-2 rounded-full bg-[#d98310] animate-ping opacity-40" />
               </div>
               <span className="text-[#d98310] font-bold text-xs tracking-[0.25em] uppercase">NERV_02</span>
               <span className="text-[#2a2a2a]">|</span>

@@ -1,5 +1,6 @@
 'use client'
 import { apiFetch } from '@/lib/client-auth'
+import Link from 'next/link'
 import { C, MODELS } from '@/lib/theme'
 import { timeAgo } from '@/lib/utils'
 
@@ -220,9 +221,9 @@ export default function RndPage() {
 
       {/* ── TOP BAR ── */}
       <div style={{ display: 'flex', alignItems: 'center', gap: 16, padding: '10px 20px', borderBottom: `1px solid ${C.border}`, flexShrink: 0, background: C.bgPanel }}>
-        <a href="/" style={{ textDecoration: 'none' }}>
+        <Link href="/" style={{ textDecoration: 'none' }}>
           <span style={{ color: C.orange, fontWeight: 700, letterSpacing: 3, fontSize: 13 }}>NERV_02</span>
-        </a>
+        </Link>
         <span style={{ color: C.textDim }}>›</span>
         <span style={{ color: C.cyan, letterSpacing: 2, fontSize: 11 }}>R&D COUNCIL</span>
 
@@ -246,7 +247,7 @@ export default function RndPage() {
           ▶ CONVENE COUNCIL
         </button>
 
-        <a href="/" style={{ color: C.textDim, fontSize: 10, textDecoration: 'none', letterSpacing: 1 }}>← BACK</a>
+        <Link href="/" style={{ color: C.textDim, fontSize: 10, textDecoration: 'none', letterSpacing: 1 }}>← BACK</Link>
       </div>
 
       {/* ── DISPATCH MODAL ── */}
