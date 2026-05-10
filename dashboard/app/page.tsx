@@ -155,6 +155,7 @@ function ScheduleEditor({ cron, onSave }: { cron: string; onSave: (cron: string)
 }
 
 function VarEditor({ value: initial, onSave }: { value: string; onSave: (v: string) => void }) {
+  // react-doctor-disable-next-line react-doctor/no-derived-useState -- intentional local edit buffer seeded from prop
   const [value, setValue] = useState(initial)
 
   return (
@@ -882,7 +883,10 @@ export default function Dashboard() {
             {skills.toSorted((a, b) => Number(b.enabled) - Number(a.enabled)).map(skill => (
               <div key={skill.name} className={`border-b border-zinc-800/20 border-l-2 ${skill.enabled ? 'bg-green-950/10 border-l-green-500' : 'border-l-transparent'}`}>
                 <div
+                  role="button"
+                  tabIndex={0}
                   onClick={() => setOpenSchedule(openSchedule === skill.name ? null : skill.name)}
+                  onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setOpenSchedule(openSchedule === skill.name ? null : skill.name) } }}
                   className="flex items-center gap-3 px-4 py-2.5 hover:bg-zinc-900/50 transition-colors cursor-pointer"
                 >
                   {/* Toggle */}
@@ -1328,7 +1332,9 @@ export default function Dashboard() {
 
       {/* LLM Connect Modal */}
       {showConnectModal && (
+        /* react-doctor-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions */
         <div className="fixed inset-0 z-40 flex items-center justify-center bg-black/60 backdrop-blur-sm" onClick={() => setShowConnectModal(false)}>
+          {/* react-doctor-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions */}
           <div className="bg-[#06070d] border border-[#1c2230] w-full max-w-lg mx-4 p-6 shadow-2xl" onClick={e => e.stopPropagation()}>
             <div className="flex items-center justify-between mb-5">
               <div>

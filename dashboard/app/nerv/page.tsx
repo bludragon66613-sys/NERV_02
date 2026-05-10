@@ -190,7 +190,7 @@ function StratCard({ s, rank }: { s: Strategy; rank: number }) {
   const cColor = convColor(s.conviction)
   const dColor = dirColor(s.direction)
   return (
-    <div onClick={() => setOpen(o => !o)} style={{ border: `1px solid ${open ? C.borderHi : C.border}`, background: C.bgPanel, cursor: 'pointer', overflow: 'hidden', transition: 'border-color 0.15s', animation: 'nge-fadein 0.25s ease' }}>
+    <button type="button" onClick={() => setOpen(o => !o)} style={{ display: 'block', width: '100%', textAlign: 'left', background: 'none', border: `1px solid ${open ? C.borderHi : C.border}`, backgroundColor: C.bgPanel, cursor: 'pointer', overflow: 'hidden', transition: 'border-color 0.15s', animation: 'nge-fadein 0.25s ease', padding: 0 }}>
       <div style={{ height: 2, background: cColor, opacity: 0.85 }} />
       <div style={{ padding: '10px 12px' }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 8 }}>
@@ -217,12 +217,12 @@ function StratCard({ s, rank }: { s: Strategy; rank: number }) {
         </div>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 3, marginTop: 7 }}>
           {s.signals.map((sig, i) => (
+            // react-doctor-disable-next-line react-doctor/no-array-index-as-key -- signals not guaranteed unique
             <span key={`${sig}-${i}`} style={{ fontFamily: 'monospace', fontSize: 7, padding: '2px 5px', background: C.bgDeep, color: C.textDim, border: `1px solid ${C.border}`, letterSpacing: 1 }}>{sig.replace(/_/g, ' ')}</span>
           ))}
         </div>
         {s.reasons.slice(0, 2).map((r, i) => (
-          // react-doctor-disable-next-line react-doctor/no-array-index-as-key
-          // reason strings are not unique — same text can repeat across strategies
+          // react-doctor-disable-next-line react-doctor/no-array-index-as-key -- reason strings not unique
           <div key={i} style={{ display: 'flex', gap: 5, marginTop: 4, alignItems: 'flex-start' }}>
             <span style={{ color: C.orange, fontSize: 8, marginTop: 1 }}>›</span>
             <span style={{ color: C.text, fontFamily: 'monospace', fontSize: 9, lineHeight: 1.5 }}>{r}</span>
@@ -233,8 +233,7 @@ function StratCard({ s, rank }: { s: Strategy; rank: number }) {
       {open && (
         <div style={{ borderTop: `1px solid ${C.border}`, padding: '10px 12px', background: C.bgDeep }}>
           {s.reasons.slice(2).map((r, i) => (
-            // react-doctor-disable-next-line react-doctor/no-array-index-as-key
-            // reason strings are not unique — same text can repeat across strategies
+            // react-doctor-disable-next-line react-doctor/no-array-index-as-key -- reason strings not unique
             <div key={i} style={{ display: 'flex', gap: 5, marginBottom: 4, alignItems: 'flex-start' }}>
               <span style={{ color: C.orange, fontSize: 8, marginTop: 1 }}>›</span>
               <span style={{ color: C.text, fontFamily: 'monospace', fontSize: 9, lineHeight: 1.5 }}>{r}</span>
@@ -275,7 +274,7 @@ function StratCard({ s, rank }: { s: Strategy; rank: number }) {
           )}
         </div>
       )}
-    </div>
+    </button>
   )
 }
 
@@ -366,6 +365,7 @@ function IntelPanel({ onDispatch }: { onDispatch: (skill: string) => void }) {
         </div>
         <div style={{ display: 'flex', gap: 3 }}>
           {[0, 1, 2, 3, 4].map(i => (
+            // react-doctor-disable-next-line react-doctor/no-array-index-as-key -- static animation bars, never reorders
             <div key={i} style={{ width: 3, background: C.orange, borderRadius: 1, animation: 'nge-bar 1.2s ease-in-out infinite', animationDelay: `${i * 0.12}s`, height: 8 + i * 5 }} />
           ))}
         </div>
@@ -673,7 +673,10 @@ function WorkflowPanel() {
         <div style={{ flex: 1, overflowY: 'auto', padding: 8, display: 'flex', flexDirection: 'column', gap: 6 }}>
           {templates.map(t => (
             <div key={t.id}
+              role="button"
+              tabIndex={0}
               onClick={() => setSelected(selected?.id === t.id ? null : t)}
+              onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setSelected(selected?.id === t.id ? null : t) } }}
               style={{ padding: '8px 10px', background: selected?.id === t.id ? `${C.cyan}12` : `${C.border}18`, border: `1px solid ${selected?.id === t.id ? `${C.cyan}50` : C.border}`, cursor: 'pointer', position: 'relative' }}
             >
               <Brackets size={4} color={C.cyan} />
@@ -689,7 +692,10 @@ function WorkflowPanel() {
               <div style={{ fontFamily: 'monospace', fontSize: 7, letterSpacing: 2, color: C.textDim, marginTop: 8, paddingLeft: 4 }}>RECENT RUNS</div>
               {runs.slice(0, 10).map(r => (
                 <div key={r.id}
+                  role="button"
+                  tabIndex={0}
                   onClick={() => refreshRun(r.id)}
+                  onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); refreshRun(r.id) } }}
                   style={{ padding: '6px 10px', background: activeRun?.id === r.id ? `${sc(r.status)}12` : 'transparent', border: `1px solid ${activeRun?.id === r.id ? `${sc(r.status)}40` : C.border}`, cursor: 'pointer' }}
                 >
                   <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>

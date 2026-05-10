@@ -424,7 +424,10 @@ export default function AgencyPage() {
             {jobs.map(job => (
               <div
                 key={job.id}
+                role="button"
+                tabIndex={0}
                 onClick={() => setSelectedJob(selectedJob?.id === job.id ? null : job)}
+                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setSelectedJob(selectedJob?.id === job.id ? null : job) } }}
                 style={{
                   background: selectedJob?.id === job.id ? '#0d1117' : '#080a0f',
                   borderTop: `1px solid ${selectedJob?.id === job.id ? '#1c2230' : '#111827'}`,
