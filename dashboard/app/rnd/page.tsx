@@ -204,10 +204,10 @@ export default function RndPage() {
     const ist = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }))
     const day = ist.getDay() // 0=Sun,1=Mon...4=Thu
     const h = ist.getHours(), m = ist.getMinutes()
-    const targets = [1, 4] // Mon, Thu
+    const targets = new Set([1, 4]) // Mon, Thu
     for (let offset = 0; offset <= 7; offset++) {
       const d = (day + offset) % 7
-      if (targets.includes(d)) {
+      if (targets.has(d)) {
         if (offset === 0 && (h > 9 || (h === 9 && m > 0))) continue
         const label = offset === 0 ? 'today' : offset === 1 ? 'tomorrow' : ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][d]
         return `${label} 09:00 IST`
@@ -263,14 +263,16 @@ export default function RndPage() {
               value={focus}
               onChange={e => setFocus(e.target.value)}
               placeholder="e.g. crypto, NERV dashboard, investments..."
-              style={{ width: '100%', background: C.bg, border: `1px solid ${C.border}`, color: C.textBright, fontSize: 11, padding: '7px 10px', fontFamily: 'monospace', outline: 'none', marginBottom: 14, boxSizing: 'border-box' }}
+              className="focus:outline-none focus-visible:ring-2 focus-visible:ring-current"
+              style={{ width: '100%', background: C.bg, border: `1px solid ${C.border}`, color: C.textBright, fontSize: 11, padding: '7px 10px', fontFamily: 'monospace', marginBottom: 14, boxSizing: 'border-box' }}
             />
 
             <div style={{ fontSize: 10, color: C.textDim, marginBottom: 6 }}>MODEL</div>
             <select
               value={model}
               onChange={e => setModel(e.target.value)}
-              style={{ width: '100%', background: C.bg, border: `1px solid ${C.border}`, color: C.text, fontSize: 11, padding: '7px 10px', fontFamily: 'monospace', outline: 'none', marginBottom: 20 }}
+              className="focus:outline-none focus-visible:ring-2 focus-visible:ring-current"
+              style={{ width: '100%', background: C.bg, border: `1px solid ${C.border}`, color: C.text, fontSize: 11, padding: '7px 10px', fontFamily: 'monospace', marginBottom: 20 }}
             >
               {MODELS.map(m => <option key={m.id} value={m.id}>{m.label}</option>)}
             </select>

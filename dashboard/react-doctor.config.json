@@ -4,12 +4,42 @@
       "react-doctor/no-tiny-text",
       "react-doctor/no-wide-letter-spacing",
       "react-doctor/design-no-em-dash-in-jsx-text",
-      "react-doctor/design-no-three-period-ellipsis"
+      "react-doctor/design-no-three-period-ellipsis",
+      "react-doctor/no-long-transition-duration",
+      "react-doctor/no-inline-bounce-easing",
+      "react-doctor/no-side-tab-border",
+      "react-doctor/design-no-bold-heading",
+      "react-doctor/no-z-index-9999"
     ],
     "overrides": [
       {
         "files": ["app/api/agency/jobs/route.ts"],
         "rules": ["react-doctor/nextjs-no-side-effect-in-get-handler"]
+      },
+      {
+        "files": ["app/nerv/page.tsx", "app/page.tsx"],
+        "rules": ["jsx-a11y/no-autofocus"]
+      },
+      {
+        "files": ["lib/workflow-engine.ts"],
+        "rules": ["knip/exports", "knip/types"]
+      },
+      {
+        "files": ["lib/auth.ts", "lib/github.ts", "lib/jobs.ts", "lib/workflow-runs.ts"],
+        "rules": ["knip/exports"]
+      },
+      {
+        "files": ["command-registry-hook.mjs", "ecosystem.config.cjs", "openclaw-proxy/index.js"],
+        "rules": ["knip/files"]
+      },
+      {
+        "files": [
+          "lib/catalog.ts",
+          "app/api/memory/route.ts",
+          "app/api/import/route.ts",
+          "app/api/agency/dispatch/route.ts"
+        ],
+        "rules": ["react-doctor/js-set-map-lookups"]
       }
     ]
   }

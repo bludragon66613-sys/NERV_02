@@ -111,7 +111,7 @@ function ObsCard({
       style={{
         borderLeft: `2px solid ${expanded ? meta.color : meta.color + '44'}`,
         background: expanded ? `${meta.color}06` : 'transparent',
-        transition: 'all 0.15s',
+        transition: 'border-color 0.15s, background 0.15s',
         paddingLeft: 12,
         paddingBottom: expanded ? 12 : 0,
       }}
@@ -343,10 +343,11 @@ export default function TimelinePage() {
           value={search}
           onChange={e => setSearch(e.target.value)}
           placeholder="filter loaded..."
+          className="focus:outline-none focus-visible:ring-2 focus-visible:ring-current"
           style={{
             background: C.bgPanel, border: `1px solid ${C.border}`, borderRadius: 3,
             color: C.textBright, fontSize: 11, padding: '4px 10px',
-            fontFamily: 'monospace', outline: 'none', width: 180,
+            fontFamily: 'monospace', width: 180,
           }}
         />
       </div>

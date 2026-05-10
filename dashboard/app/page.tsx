@@ -1303,8 +1303,9 @@ export default function Dashboard() {
             {uploadFiles.length > 0 && (
               <div className="mt-4 space-y-3">
                 <div>
-                  <label className="text-[10px] text-zinc-500 uppercase tracking-wider mb-1 block">Skill name (optional — auto-detected from folder or SKILL.md)</label>
+                  <label htmlFor="upload-skill-name" className="text-[10px] text-zinc-500 uppercase tracking-wider mb-1 block">Skill name (optional — auto-detected from folder or SKILL.md)</label>
                   <input
+                    id="upload-skill-name"
                     type="text"
                     value={uploadName}
                     onChange={(e) => setUploadName(e.target.value)}

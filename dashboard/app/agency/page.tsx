@@ -319,10 +319,11 @@ export default function AgencyPage() {
               onChange={e => handleIntentChange(e.target.value)}
               placeholder="Describe what you want to do... (e.g. 'run hl-intel', 'brief me on AI news', 'analyze my portfolio')"
               rows={4}
+              className="focus:outline-none focus-visible:ring-2 focus-visible:ring-current"
               style={{
                 width: '100%', background: '#0d1117', border: '1px solid #1c2230',
                 color: '#c9d3e0', padding: '10px 14px', fontSize: 12, fontFamily: 'monospace',
-                resize: 'vertical', outline: 'none', boxSizing: 'border-box',
+                resize: 'vertical', boxSizing: 'border-box',
               }}
             />
             <div style={{ display: 'flex', gap: 10, marginTop: 10 }}>

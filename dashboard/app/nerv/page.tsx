@@ -1214,7 +1214,8 @@ export default function NervPage() {
                   onKeyDown={e => e.key === 'Enter' && handleSend()}
                   placeholder='talk to Claude or dispatch an agent... (try "intel" to open HL dashboard)'
                   disabled={isLoading}
-                  style={{ flex: 1, background: 'transparent', border: 'none', outline: 'none', color: C.textBright, fontFamily: 'monospace', fontSize: 12, caretColor: C.orange }}
+                  className="focus:outline-none focus-visible:ring-2 focus-visible:ring-current"
+                  style={{ flex: 1, background: 'transparent', border: 'none', color: C.textBright, fontFamily: 'monospace', fontSize: 12, caretColor: C.orange }}
                   autoFocus
                 />
                 {/* TTS toggle */}

@@ -184,7 +184,8 @@ export default function AgentsPage() {
           value={search}
           onChange={e => setSearch(e.target.value)}
           placeholder="Search agents..."
-          style={{ background: '#0d1117', border: '1px solid #1c2230', color: '#c9d3e0', padding: '6px 12px', fontSize: 11, fontFamily: 'monospace', width: 220, outline: 'none', marginRight: 8 }}
+          className="focus:outline-none focus-visible:ring-2 focus-visible:ring-current"
+          style={{ background: '#0d1117', border: '1px solid #1c2230', color: '#c9d3e0', padding: '6px 12px', fontSize: 11, fontFamily: 'monospace', width: 220, marginRight: 8 }}
         />
         {activeDivisions.map(d => (
           <button
@@ -271,7 +272,8 @@ export default function AgentsPage() {
                 value={activationPrompt}
                 onChange={e => setActivationPrompt(e.target.value)}
                 rows={5}
-                style={{ width: '100%', background: '#06070d', border: '1px solid #1c2230', color: '#c9d3e0', padding: '8px 12px', fontSize: 11, fontFamily: 'monospace', resize: 'vertical', outline: 'none', boxSizing: 'border-box' }}
+                className="focus:outline-none focus-visible:ring-2 focus-visible:ring-current"
+                style={{ width: '100%', background: '#06070d', border: '1px solid #1c2230', color: '#c9d3e0', padding: '8px 12px', fontSize: 11, fontFamily: 'monospace', resize: 'vertical', boxSizing: 'border-box' }}
               />
             </div>
 

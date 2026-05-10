@@ -87,7 +87,7 @@ function MemoryCard({
         background: selected ? `${meta.color}08` : C.bgPanel,
         border: `1px solid ${selected ? meta.color + '44' : C.border}`,
         borderRadius: 4, padding: '10px 12px', cursor: 'pointer',
-        transition: 'all 0.15s',
+        transition: 'background 0.15s, border-color 0.15s',
       }}
     >
       <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
@@ -262,10 +262,11 @@ export default function MemoryPage() {
           value={search}
           onChange={e => setSearch(e.target.value)}
           placeholder="search memory..."
+          className="focus:outline-none focus-visible:ring-2 focus-visible:ring-current"
           style={{
             background: C.bgPanel, border: `1px solid ${C.border}`, borderRadius: 3,
             color: C.textBright, fontSize: 11, padding: '4px 10px',
-            fontFamily: 'monospace', outline: 'none', width: 200,
+            fontFamily: 'monospace', width: 200,
           }}
         />
       </div>
