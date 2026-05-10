@@ -38,11 +38,11 @@ function FearGreedArc({ value, classification }: { value: number; classification
           { start: startAngle + totalArc * 0.4, end: startAngle + totalArc * 0.6, color: '#eab308' },
           { start: startAngle + totalArc * 0.6, end: startAngle + totalArc * 0.8, color: '#22c55e' },
           { start: startAngle + totalArc * 0.8, end: endAngle, color: '#10b981' },
-        ].map((seg, i) => {
+        ].map((seg) => {
           if (valueAngle <= seg.start) return null
           const segEnd = Math.min(valueAngle, seg.end)
           const d = `M ${arcX(seg.start)} ${arcY(seg.start)} A ${r} ${r} 0 ${seg.end - seg.start > 180 ? 1 : 0} 1 ${arcX(segEnd)} ${arcY(segEnd)}`
-          return <path key={i} d={d} fill="none" stroke={seg.color} strokeWidth="8" strokeLinecap="round" opacity="0.9" />
+          return <path key={seg.color} d={d} fill="none" stroke={seg.color} strokeWidth="8" strokeLinecap="round" opacity="0.9" />
         })}
         {/* Needle dot */}
         <circle cx={needleX} cy={needleY} r="5" fill={color} />
@@ -112,7 +112,9 @@ function StratCard({ s, rank }: { s: Strategy; rank: number }) {
           <div className="flex items-center gap-2 shrink-0">
             <div className="flex items-center gap-1">
               {Array.from({ length: Math.min(5, Math.ceil(s.score / 20)) }).map((_, i) => (
-                <div key={i} className="w-1 h-3 rounded-sm" style={{ background: cColor, opacity: 0.7 + i * 0.06 }} />
+              // react-doctor-disable-next-line react-doctor/no-array-index-as-key
+              // score bar segments are anonymous visual elements with no stable id
+              <div key={i} className="w-1 h-3 rounded-sm" style={{ background: cColor, opacity: 0.7 + i * 0.06 }} />
               ))}
             </div>
             <span className="text-[10px] font-mono text-[#4b5563] group-hover:text-[#6b7280]">{open ? '▲' : '▼'}</span>
@@ -142,6 +144,8 @@ function StratCard({ s, rank }: { s: Strategy; rank: number }) {
 
         {/* Reasons */}
         {s.reasons.slice(0, 2).map((r, i) => (
+          // react-doctor-disable-next-line react-doctor/no-array-index-as-key
+          // reason strings are not unique — same text can repeat across strategies
           <div key={i} className="flex items-start gap-1.5 mt-1.5">
             <span className="text-[#d98310] text-[10px] mt-0.5 shrink-0">›</span>
             <span className="text-[11px] font-mono text-[#9ca3af]">{r}</span>
@@ -158,6 +162,8 @@ function StratCard({ s, rank }: { s: Strategy; rank: number }) {
 
           {/* Remaining reasons */}
           {s.reasons.slice(2).map((r, i) => (
+            // react-doctor-disable-next-line react-doctor/no-array-index-as-key
+            // reason strings are not unique — same text can repeat across strategies
             <div key={i} className="flex items-start gap-1.5">
               <span className="text-[#d98310] text-[10px] mt-0.5 shrink-0">›</span>
               <span className="text-[11px] font-mono text-[#9ca3af]">{r}</span>
@@ -524,10 +530,10 @@ export default function IntelPage() {
                         <div key={h} className="text-[9px] font-mono text-[#2a2a2a] uppercase tracking-widest">{h}</div>
                       ))}
                     </div>
-                    {data.leaderboard.top_traders.slice(0, 15).map((t, i) => {
+                    {data.leaderboard.top_traders.slice(0, 15).map((t) => {
                       const wr = t.trade_stats?.win_rate
                       return (
-                        <div key={i} className="grid grid-cols-[1fr_auto_auto_auto] gap-x-6 px-4 py-2.5 border-b border-[#111111] last:border-0 hover:bg-[#111111] transition-colors">
+                        <div key={t.display} className="grid grid-cols-[1fr_auto_auto_auto] gap-x-6 px-4 py-2.5 border-b border-[#111111] last:border-0 hover:bg-[#111111] transition-colors">
                           <span className="text-[11px] font-mono text-[#6b7280] truncate">{t.display}</span>
                           <span className="text-[11px] font-mono text-green-400">${(t.all_time.pnl / 1e6).toFixed(1)}M</span>
                           <span className={`text-[11px] font-mono ${t.month.pnl >= 0 ? 'text-green-400' : 'text-red-400'}`}>

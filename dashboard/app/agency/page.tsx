@@ -388,8 +388,8 @@ export default function AgencyPage() {
             <div>
               <div style={{ fontSize: 10, color: '#f59e0b', letterSpacing: 2, marginBottom: 10 }}>CLARIFY INTENT — choose one:</div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-                {classified.suggestions.map((s, i) => (
-                  <div key={i} style={{ background: '#0d1117', border: '1px solid #f59e0b33', padding: 12, display: 'flex', alignItems: 'flex-start', gap: 12 }}>
+                {classified.suggestions.map((s) => (
+                  <div key={s.skill} style={{ background: '#0d1117', border: '1px solid #f59e0b33', padding: 12, display: 'flex', alignItems: 'flex-start', gap: 12 }}>
                     <div style={{ flex: 1 }}>
                       <div style={{ fontSize: 11, fontWeight: 700, color: '#e2e8f0' }}>{s.label}</div>
                       <div style={{ fontSize: 10, color: '#8892a4', marginTop: 3 }}>{s.description}</div>

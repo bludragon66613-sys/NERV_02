@@ -168,6 +168,8 @@ function ObsCard({
               </div>
               <ul style={{ margin: 0, padding: '0 0 0 16px', display: 'flex', flexDirection: 'column', gap: 3 }}>
                 {facts.map((f, i) => (
+                  // react-doctor-disable-next-line react-doctor/no-array-index-as-key
+                  // fact strings are free-form text and may not be unique within one observation
                   <li key={i} style={{ color: C.text, fontSize: 11, lineHeight: 1.5 }}>{f}</li>
                 ))}
               </ul>
@@ -181,8 +183,8 @@ function ObsCard({
                     READ ({filesRead.length})
                   </div>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-                    {filesRead.map((f, i) => (
-                      <span key={i} style={{ color: C.teal, fontSize: 10, fontFamily: 'monospace' }}>
+                    {filesRead.map((f) => (
+                      <span key={f} style={{ color: C.teal, fontSize: 10, fontFamily: 'monospace' }}>
                         {f.replace(/^.*[/\\]/, '…/')}
                       </span>
                     ))}
@@ -195,8 +197,8 @@ function ObsCard({
                     MODIFIED ({filesModified.length})
                   </div>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-                    {filesModified.map((f, i) => (
-                      <span key={i} style={{ color: C.amber, fontSize: 10, fontFamily: 'monospace' }}>
+                    {filesModified.map((f) => (
+                      <span key={f} style={{ color: C.amber, fontSize: 10, fontFamily: 'monospace' }}>
                         {f.replace(/^.*[/\\]/, '…/')}
                       </span>
                     ))}

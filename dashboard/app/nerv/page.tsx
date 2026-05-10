@@ -149,11 +149,11 @@ function FearGreedArc({ value, classification }: { value: number; classification
   return (
     <svg width="140" height="96" viewBox="0 0 140 96">
       <path d={bgD} fill="none" stroke={C.bgDeep} strokeWidth="7" strokeLinecap="round" />
-      {segs.map((seg, i) => {
+      {segs.map((seg) => {
         if (valueAngle <= seg.start) return null
         const segEnd = Math.min(valueAngle, seg.end)
         const d = `M ${arcX(seg.start)} ${arcY(seg.start)} A ${r} ${r} 0 ${seg.end - seg.start > 180 ? 1 : 0} 1 ${arcX(segEnd)} ${arcY(segEnd)}`
-        return <path key={i} d={d} fill="none" stroke={seg.color} strokeWidth="7" strokeLinecap="round" opacity="0.9" />
+        return <path key={seg.color} d={d} fill="none" stroke={seg.color} strokeWidth="7" strokeLinecap="round" opacity="0.9" />
       })}
       <circle cx={needleX} cy={needleY} r="4" fill={color} />
       <circle cx={needleX} cy={needleY} r="4" fill={color} opacity="0.3">
@@ -202,6 +202,8 @@ function StratCard({ s, rank }: { s: Strategy; rank: number }) {
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
             {Array.from({ length: Math.min(5, Math.ceil(s.score / 20)) }).map((_, i) => (
+              // react-doctor-disable-next-line react-doctor/no-array-index-as-key
+              // score bar segments are anonymous visual elements with no stable id
               <div key={i} style={{ width: 2, height: 9, background: cColor, opacity: 0.6 + i * 0.08 }} />
             ))}
             <span style={{ color: C.textDim, fontFamily: 'monospace', fontSize: 8, marginLeft: 4 }}>{open ? '▲' : '▼'}</span>
@@ -219,6 +221,8 @@ function StratCard({ s, rank }: { s: Strategy; rank: number }) {
           ))}
         </div>
         {s.reasons.slice(0, 2).map((r, i) => (
+          // react-doctor-disable-next-line react-doctor/no-array-index-as-key
+          // reason strings are not unique — same text can repeat across strategies
           <div key={i} style={{ display: 'flex', gap: 5, marginTop: 4, alignItems: 'flex-start' }}>
             <span style={{ color: C.orange, fontSize: 8, marginTop: 1 }}>›</span>
             <span style={{ color: C.text, fontFamily: 'monospace', fontSize: 9, lineHeight: 1.5 }}>{r}</span>
@@ -229,6 +233,8 @@ function StratCard({ s, rank }: { s: Strategy; rank: number }) {
       {open && (
         <div style={{ borderTop: `1px solid ${C.border}`, padding: '10px 12px', background: C.bgDeep }}>
           {s.reasons.slice(2).map((r, i) => (
+            // react-doctor-disable-next-line react-doctor/no-array-index-as-key
+            // reason strings are not unique — same text can repeat across strategies
             <div key={i} style={{ display: 'flex', gap: 5, marginBottom: 4, alignItems: 'flex-start' }}>
               <span style={{ color: C.orange, fontSize: 8, marginTop: 1 }}>›</span>
               <span style={{ color: C.text, fontFamily: 'monospace', fontSize: 9, lineHeight: 1.5 }}>{r}</span>
@@ -479,8 +485,8 @@ function IntelPanel({ onDispatch }: { onDispatch: (skill: string) => void }) {
                       <div key={h} style={{ fontFamily: 'monospace', fontSize: 6, color: C.textMuted, letterSpacing: 2 }}>{h}</div>
                     ))}
                   </div>
-                  {data.leaderboard.top_traders.slice(0, 12).map((t, i) => (
-                    <div key={i} style={{ display: 'grid', gridTemplateColumns: '1fr auto auto auto', gap: 12, padding: '5px 12px', borderBottom: `1px solid ${C.border}` }}>
+                  {data.leaderboard.top_traders.slice(0, 12).map((t) => (
+                    <div key={t.display} style={{ display: 'grid', gridTemplateColumns: '1fr auto auto auto', gap: 12, padding: '5px 12px', borderBottom: `1px solid ${C.border}` }}>
                       <span style={{ fontFamily: 'monospace', fontSize: 8, color: C.textDim, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{t.display}</span>
                       <span style={{ fontFamily: 'monospace', fontSize: 8, color: C.green }}>${(t.all_time.pnl / 1e6).toFixed(1)}M</span>
                       <span style={{ fontFamily: 'monospace', fontSize: 8, color: t.month.pnl >= 0 ? C.green : C.red }}>{t.month.pnl >= 0 ? '+' : ''}${(t.month.pnl / 1e3).toFixed(0)}k</span>
@@ -788,6 +794,8 @@ function WorkflowPanel() {
               const waves: typeof selected.nodes[] = Array.from({ length: maxD + 1 }, () => [])
               selected.nodes.forEach(n => waves[depth[n.id]].push(n))
 
+              // react-doctor-disable-next-line react-doctor/no-array-index-as-key
+              // waves are depth-ordered buckets computed from DAG analysis; index == depth level, never reorders
               return waves.map((wave, wi) => (
                 <div key={wi}>
                   <div style={{ fontFamily: 'monospace', fontSize: 6, color: C.textDim, letterSpacing: 2, marginBottom: 4 }}>WAVE {wi} {wi === 0 ? '(PARALLEL)' : ''}</div>
@@ -1067,7 +1075,7 @@ export default function NervPage() {
       {/* Data cascade */}
       <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 1, overflow: 'hidden', opacity: 0.025 }}>
         {[12, 31, 52, 68, 84].map((left, i) => (
-          <pre key={i} style={{ position: 'absolute', left: `${left}%`, top: 0, fontFamily: 'monospace', fontSize: 7, color: C.orange, lineHeight: 1.5, margin: 0, animation: `nge-cascade ${14 + i * 4}s linear infinite`, animationDelay: `-${i * 5}s` }}>
+          <pre key={left} style={{ position: 'absolute', left: `${left}%`, top: 0, fontFamily: 'monospace', fontSize: 7, color: C.orange, lineHeight: 1.5, margin: 0, animation: `nge-cascade ${14 + i * 4}s linear infinite`, animationDelay: `-${i * 5}s` }}>
             {CASCADE_CONTENT}
           </pre>
         ))}
