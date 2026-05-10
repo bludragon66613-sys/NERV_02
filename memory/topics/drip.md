@@ -61,3 +61,4 @@
 2026-05-09 · KWDGKNPCLRFGPG · cosmetic_eye_area · rank 83 · drp-693534-03
 2026-05-09 · EFRKDIPAQWSP · cosmetic_eye_area · rank 88 · drp-823797-00
 2026-05-10 · KFR · cosmetic_lip · rank 81 · drp-507357-01
+2026-05-10 · IEASFSHTYRT · cosmetic_lip · rank 85 · drp-157207-00
