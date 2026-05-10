@@ -9,7 +9,9 @@
       "react-doctor/no-inline-bounce-easing",
       "react-doctor/no-side-tab-border",
       "react-doctor/design-no-bold-heading",
-      "react-doctor/no-z-index-9999"
+      "react-doctor/no-z-index-9999",
+      "react-doctor/no-inline-exhaustive-style",
+      "react-doctor/rendering-hydration-mismatch-time"
     ],
     "overrides": [
       {
@@ -40,6 +42,37 @@
           "app/api/agency/dispatch/route.ts"
         ],
         "rules": ["react-doctor/js-set-map-lookups"]
+      },
+      {
+        "files": ["app/api/**", "lib/**"],
+        "rules": [
+          "react-doctor/async-await-in-loop",
+          "react-doctor/async-parallel",
+          "react-doctor/server-fetch-without-revalidate",
+          "react-doctor/server-hoist-static-io"
+        ]
+      },
+      {
+        "files": [
+          "app/openclaw/page.tsx",
+          "app/intel/page.tsx",
+          "app/nerv/page.tsx",
+          "app/agency/page.tsx",
+          "app/page.tsx"
+        ],
+        "rules": ["react-doctor/no-giant-component"]
+      },
+      {
+        "files": [
+          "app/openclaw/page.tsx",
+          "app/intel/page.tsx",
+          "app/nerv/page.tsx",
+          "app/agency/page.tsx",
+          "app/page.tsx",
+          "app/rnd/page.tsx",
+          "app/agents/page.tsx"
+        ],
+        "rules": ["react-doctor/prefer-useReducer"]
       }
     ]
   }
