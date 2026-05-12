@@ -68,3 +68,4 @@
 2026-05-11 · TECIGCVVISTRTADDWYTA · cosmetic_postprocedure · rank 87 · drp-402380-03
 2026-05-12 · CAVHCCTPPWV · cosmetic_cell_penetrating · rank 87 · drp-912787-03
 2026-05-12 · DTVFCVDWKHWH · cosmetic_cell_penetrating · rank 82 · drp-228700-00
+2026-05-12 · SVSGSQVYMSDT · cosmetic_cell_penetrating · rank 87 · drp-280883-01
