@@ -70,3 +70,4 @@
 2026-05-12 · DTVFCVDWKHWH · cosmetic_cell_penetrating · rank 82 · drp-228700-00
 2026-05-12 · SVSGSQVYMSDT · cosmetic_cell_penetrating · rank 87 · drp-280883-01
 2026-05-13 · QFFPHNAP · cosmetic_sensory · rank 79 · drp-910280-04
+2026-05-13 · GIP · cosmetic_sensory · rank 85 · drp-746440-01
