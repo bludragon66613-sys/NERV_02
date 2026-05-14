@@ -72,3 +72,4 @@
 2026-05-13 · QFFPHNAP · cosmetic_sensory · rank 79 · drp-910280-04
 2026-05-13 · GIP · cosmetic_sensory · rank 85 · drp-746440-01
 2026-05-13 · GAI · cosmetic_sensory · rank 87 · drp-858372-03
+2026-05-14 · IMTDWEAA · cosmetic_longevity_adjacent · rank 82 · drp-982507-02
