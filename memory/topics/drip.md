@@ -74,3 +74,4 @@
 2026-05-13 · GAI · cosmetic_sensory · rank 87 · drp-858372-03
 2026-05-14 · IMTDWEAA · cosmetic_longevity_adjacent · rank 82 · drp-982507-02
 2026-05-14 · KVAYIYTAAMEHQYGRVC · cosmetic_longevity_adjacent · rank 86 · drp-536087-00
+2026-05-14 · IIGFWGWPL · cosmetic_longevity_adjacent · rank 84 · drp-755212-00
