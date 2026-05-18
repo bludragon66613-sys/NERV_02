@@ -86,3 +86,4 @@
 2026-05-17 · WTKNTFGKHEGR · cosmetic_antiwrinkle_lifting · rank 81 · drp-633863-00
 2026-05-18 · PKWKYRGHRRPDHIPTYD · cosmetic_wound_healing · rank 82 · drp-868976-01
 2026-05-18 · IEGKQKNPLNALFMTIDAR · cosmetic_wound_healing · rank 82 · drp-553698-03
+2026-05-18 · FAV · cosmetic_wound_healing · rank 81 · drp-299623-03
