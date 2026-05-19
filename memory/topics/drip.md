@@ -88,3 +88,4 @@
 2026-05-18 · IEGKQKNPLNALFMTIDAR · cosmetic_wound_healing · rank 82 · drp-553698-03
 2026-05-18 · FAV · cosmetic_wound_healing · rank 81 · drp-299623-03
 2026-05-19 · EIERFVMQHRIFCPGYM · cosmetic_brightening_depigmentation · rank 83 · drp-841220-04
+2026-05-19 · GTDQDV · cosmetic_brightening_depigmentation · rank 88 · drp-957912-01
