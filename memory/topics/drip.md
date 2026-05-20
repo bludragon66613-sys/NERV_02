@@ -90,3 +90,4 @@
 2026-05-19 · EIERFVMQHRIFCPGYM · cosmetic_brightening_depigmentation · rank 83 · drp-841220-04
 2026-05-19 · GTDQDV · cosmetic_brightening_depigmentation · rank 88 · drp-957912-01
 2026-05-19 · RTAQ · cosmetic_brightening_depigmentation · rank 84 · drp-310389-01
+2026-05-20 · VHDQCPQYRQEM · cosmetic_antimicrobial_skin · rank 82 · drp-977459-02
