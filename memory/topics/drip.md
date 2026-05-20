@@ -92,3 +92,4 @@
 2026-05-19 · RTAQ · cosmetic_brightening_depigmentation · rank 84 · drp-310389-01
 2026-05-20 · VHDQCPQYRQEM · cosmetic_antimicrobial_skin · rank 82 · drp-977459-02
 2026-05-20 · LDH · cosmetic_antimicrobial_skin · rank 84 · drp-311207-01
+2026-05-20 · NHMCFC · cosmetic_antimicrobial_skin · rank 81 · drp-111383-03
