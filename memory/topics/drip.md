@@ -94,3 +94,4 @@
 2026-05-20 · LDH · cosmetic_antimicrobial_skin · rank 84 · drp-311207-01
 2026-05-20 · NHMCFC · cosmetic_antimicrobial_skin · rank 81 · drp-111383-03
 2026-05-21 · ISAR · cosmetic_antiinflammatory_skin · rank 79 · drp-509896-03
+2026-05-21 · IKQIKCPWCHECQSKLK · cosmetic_antiinflammatory_skin · rank 86 · drp-098547-02
