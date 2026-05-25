@@ -106,3 +106,4 @@
 2026-05-24 · GFFDNLCGNMVNQ · cosmetic_eye_area · rank 86 · drp-437684-02
 2026-05-24 · KIFEAYYRALRQLKG · cosmetic_eye_area · rank 79 · drp-637061-02
 2026-05-25 · FNN · cosmetic_lip · rank 78 · drp-198144-02
+2026-05-25 · VLPEEVWIIY · cosmetic_lip · rank 81 · drp-614131-00
