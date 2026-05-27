@@ -111,3 +111,4 @@
 2026-05-26 · YPERPRHQHATRMTMGLSS · cosmetic_postprocedure · rank 85 · drp-818727-02
 2026-05-26 · GFETMAAGHFH · cosmetic_postprocedure · rank 86 · drp-834653-00
 2026-05-26 · MHPQYPA · cosmetic_postprocedure · rank 83 · drp-300637-03
+2026-05-27 · YFPNQSEQGLPCAHNNADPC · cosmetic_cell_penetrating · rank 84 · drp-181088-03
