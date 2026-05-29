@@ -117,3 +117,4 @@
 2026-05-28 · TDKHKICIWI · cosmetic_sensory · rank 83 · drp-176942-01
 2026-05-28 · QGHILMYLFDAK · cosmetic_sensory · rank 78 · drp-403435-00
 2026-05-28 · WAPW · cosmetic_sensory · rank 84 · drp-524594-04
+2026-05-29 · FKTQ · cosmetic_longevity_adjacent · rank 81 · drp-237993-00
