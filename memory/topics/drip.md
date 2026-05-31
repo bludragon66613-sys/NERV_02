@@ -125,3 +125,4 @@
 2026-05-30 · CQKAYHTYVWDKNIWP · cosmetic_collagen_stimulating · rank 83 · drp-037118-00
 2026-05-31 · WRSHQFFGW · cosmetic_antiaging_neuromodulator · rank 85 · drp-278806-02
 2026-05-31 · VTHLD · cosmetic_antiaging_neuromodulator · rank 84 · drp-095858-03
+2026-05-31 · ACLCIHEEFVSIPRCCMTR · cosmetic_antiaging_neuromodulator · rank 83 · drp-493541-01
