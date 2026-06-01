@@ -128,3 +128,4 @@
 2026-05-31 · ACLCIHEEFVSIPRCCMTR · cosmetic_antiaging_neuromodulator · rank 83 · drp-493541-01
 2026-06-01 · RMQHLLCINPNPHGFGIW · cosmetic_antiwrinkle_lifting · rank 84 · drp-785936-02
 2026-06-01 · AKMKMTGMKWS · cosmetic_antiwrinkle_lifting · rank 80 · drp-297625-00
+2026-06-01 · QNHHPFPLVGYYLHSH · cosmetic_antiwrinkle_lifting · rank 84 · drp-010249-00
