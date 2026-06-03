@@ -132,3 +132,4 @@
 2026-06-02 · MRHAFCCGWWHM · cosmetic_wound_healing · rank 83 · drp-212528-02
 2026-06-02 · LCCEGMYHQEPWAHSGDCRQ · cosmetic_wound_healing · rank 77 · drp-074632-00
 2026-06-02 · TINRLYN · cosmetic_wound_healing · rank 80 · drp-672188-00
+2026-06-03 · AQWMYGTMSEGYYFENS · cosmetic_brightening_depigmentation · rank 82 · drp-521191-04
