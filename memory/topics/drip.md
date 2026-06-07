@@ -144,3 +144,4 @@
 2026-06-06 · PPFENCMRHTDISED · cosmetic_barrier_moisturizing · rank 86 · drp-000882-02
 2026-06-06 · SKYQDLWE · cosmetic_barrier_moisturizing · rank 85 · drp-196717-00
 2026-06-06 · MCYCFFNTWDLCARTRMNCW · cosmetic_barrier_moisturizing · rank 84 · drp-335303-00
+2026-06-07 · VYGNPCDWNLGW · cosmetic_hair_growth · rank 90 · drp-669905-03
