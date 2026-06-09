@@ -150,3 +150,4 @@
 2026-06-08 · TLNYWGT · cosmetic_eye_area · rank 85 · drp-485929-00
 2026-06-08 · FKYPTCSNLSIQGFQNWDN · cosmetic_eye_area · rank 86 · drp-987383-01
 2026-06-08 · GVRWGDIEYLYR · cosmetic_eye_area · rank 85 · drp-911664-01
+2026-06-09 · CELEMRGCF · cosmetic_lip · rank 83 · drp-278999-03
