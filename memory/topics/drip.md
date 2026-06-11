@@ -156,3 +156,4 @@
 2026-06-10 · RCCYQ · cosmetic_postprocedure · rank 84 · drp-146956-01
 2026-06-10 · LHVVSEGPQIKVSAEFW · cosmetic_postprocedure · rank 83 · drp-387162-01
 2026-06-10 · TQGVWHKMENKLPFGQE · cosmetic_postprocedure · rank 84 · drp-415982-02
+2026-06-11 · KSDCDYPDI · cosmetic_cell_penetrating · rank 77 · drp-937511-01
