@@ -161,3 +161,4 @@
 2026-06-11 · HYVEFGMKE · cosmetic_cell_penetrating · rank 83 · drp-539358-01
 2026-06-12 · YDDNVKAEWEFSLTHPNI · cosmetic_sensory · rank 81 · drp-889427-02
 2026-06-12 · YCYSVRRYWFALVCQGY · cosmetic_sensory · rank 83 · drp-180032-03
+2026-06-12 · SIVYENGLYYMPTFRR · cosmetic_sensory · rank 88 · drp-501328-01
