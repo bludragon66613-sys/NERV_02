@@ -163,3 +163,4 @@
 2026-06-12 · YCYSVRRYWFALVCQGY · cosmetic_sensory · rank 83 · drp-180032-03
 2026-06-12 · SIVYENGLYYMPTFRR · cosmetic_sensory · rank 88 · drp-501328-01
 2026-06-13 · CHITVPRRAKSHRSYI · cosmetic_longevity_adjacent · rank 79 · drp-163688-00
+2026-06-13 · RDYI · cosmetic_longevity_adjacent · rank 79 · drp-202619-03
