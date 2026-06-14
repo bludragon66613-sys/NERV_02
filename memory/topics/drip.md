@@ -165,3 +165,4 @@
 2026-06-13 · CHITVPRRAKSHRSYI · cosmetic_longevity_adjacent · rank 79 · drp-163688-00
 2026-06-13 · RDYI · cosmetic_longevity_adjacent · rank 79 · drp-202619-03
 2026-06-13 · DLIHDQTSYAMTED · cosmetic_longevity_adjacent · rank 84 · drp-076241-04
+2026-06-14 · GIYGQYLTHYQAMT · cosmetic_collagen_stimulating · rank 84 · drp-505066-00
