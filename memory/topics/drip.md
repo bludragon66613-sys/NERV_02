@@ -172,3 +172,4 @@
 2026-06-15 · VCMRKQCLFWSP · cosmetic_antiaging_neuromodulator · rank 82 · drp-569857-02
 2026-06-15 · GECC · cosmetic_antiaging_neuromodulator · rank 88 · drp-061319-01
 2026-06-16 · ITKKSIL · cosmetic_antiwrinkle_lifting · rank 83 · drp-927115-02
+2026-06-16 · RMQNVFRHPMEPYCGK · cosmetic_antiwrinkle_lifting · rank 88 · drp-201394-00
