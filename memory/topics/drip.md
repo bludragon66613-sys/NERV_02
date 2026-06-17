@@ -176,3 +176,4 @@
 2026-06-16 · SWLLCPQ · cosmetic_antiwrinkle_lifting · rank 81 · drp-755416-02
 2026-06-17 · HKVHCENKHYPPG · cosmetic_wound_healing · rank 91 · drp-672088-00
 2026-06-17 · GQGTQIRKGGMCEIDNCW · cosmetic_wound_healing · rank 84 · drp-962401-01
+2026-06-17 · LEKFNRQYSVKVCEC · cosmetic_wound_healing · rank 80 · drp-009779-01
