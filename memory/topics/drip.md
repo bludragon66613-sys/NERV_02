@@ -183,3 +183,4 @@
 2026-06-19 · EMMNQTVMLVQSYMYIER · cosmetic_antimicrobial_skin · rank 85 · drp-633875-01
 2026-06-19 · SCISIM · cosmetic_antimicrobial_skin · rank 87 · drp-354452-02
 2026-06-19 · ASGVSWRELKKQK · cosmetic_antimicrobial_skin · rank 83 · drp-892878-00
+2026-06-20 · PCLCHRMNDISSYCSLG · cosmetic_antiinflammatory_skin · rank 82 · drp-608996-03
