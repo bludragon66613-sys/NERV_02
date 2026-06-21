@@ -186,3 +186,4 @@
 2026-06-20 · PCLCHRMNDISSYCSLG · cosmetic_antiinflammatory_skin · rank 82 · drp-608996-03
 2026-06-20 · INDM · cosmetic_antiinflammatory_skin · rank 85 · drp-189553-00
 2026-06-20 · TEFKVPADY · cosmetic_antiinflammatory_skin · rank 86 · drp-124263-01
+2026-06-21 · RDT · cosmetic_barrier_moisturizing · rank 83 · drp-287150-02
