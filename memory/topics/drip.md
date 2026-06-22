@@ -190,3 +190,4 @@
 2026-06-21 · LYEDLTGHVNHQWVIGSG · cosmetic_barrier_moisturizing · rank 88 · drp-580488-04
 2026-06-21 · ARY · cosmetic_barrier_moisturizing · rank 79 · drp-604458-03
 2026-06-22 · ESQRTQFFREVHEFGPIQ · cosmetic_hair_growth · rank 86 · drp-670692-01
+2026-06-22 · MNF · cosmetic_hair_growth · rank 82 · drp-680230-04
