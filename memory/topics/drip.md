@@ -197,3 +197,4 @@
 2026-06-23 · SYPHPPDIMCCRRKRPKI · cosmetic_eye_area · rank 82 · drp-408815-01
 2026-06-24 · MADGHF · cosmetic_lip · rank 87 · drp-939183-04
 2026-06-24 · TGRPTPKQVVRNRG · cosmetic_lip · rank 88 · drp-096144-04
+2026-06-24 · DCKK · cosmetic_lip · rank 83 · drp-845319-00
