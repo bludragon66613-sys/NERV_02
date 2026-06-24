@@ -132,7 +132,7 @@ jobs:
             -d "$(jq -n \
               --arg chat "$TELEGRAM_CHAT_ID" \
               --arg text "$MSG" \
-              '{chat_id: $chat, text: $text, parse_mode: "Markdown"}')" > /dev/null
+              '{chat_id: $chat, text: $text, parse_mode: "Markdown"}')" > /dev/null || true
 
       - name: Notify on failure
         if: failure() && env.TELEGRAM_BOT_TOKEN != '' && env.TELEGRAM_CHAT_ID != ''
