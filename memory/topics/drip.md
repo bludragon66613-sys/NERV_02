@@ -202,3 +202,4 @@
 2026-06-25 · IMRNHVPEFMS · cosmetic_postprocedure · rank 78 · drp-956316-02
 2026-06-25 · WYMFQRPA · cosmetic_postprocedure · rank 87 · drp-698910-01
 2026-06-26 · LRFTNPCRLQ · cosmetic_cell_penetrating · rank 82 · drp-499720-02
+2026-06-26 · KMACT · cosmetic_cell_penetrating · rank 86 · drp-877516-02
