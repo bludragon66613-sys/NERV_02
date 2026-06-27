@@ -204,3 +204,4 @@
 2026-06-26 · LRFTNPCRLQ · cosmetic_cell_penetrating · rank 82 · drp-499720-02
 2026-06-26 · KMACT · cosmetic_cell_penetrating · rank 86 · drp-877516-02
 2026-06-26 · LIR · cosmetic_cell_penetrating · rank 83 · drp-626644-03
+2026-06-27 · MEHD · cosmetic_sensory · rank 81 · drp-534390-02
