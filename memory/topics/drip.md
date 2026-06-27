@@ -206,3 +206,4 @@
 2026-06-26 · LIR · cosmetic_cell_penetrating · rank 83 · drp-626644-03
 2026-06-27 · MEHD · cosmetic_sensory · rank 81 · drp-534390-02
 2026-06-27 · MKG · cosmetic_sensory · rank 80 · drp-772584-04
+2026-06-27 · CDDKPRCYA · cosmetic_sensory · rank 83 · drp-637685-01
