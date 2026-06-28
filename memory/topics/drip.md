@@ -207,3 +207,4 @@
 2026-06-27 · MEHD · cosmetic_sensory · rank 81 · drp-534390-02
 2026-06-27 · MKG · cosmetic_sensory · rank 80 · drp-772584-04
 2026-06-27 · CDDKPRCYA · cosmetic_sensory · rank 83 · drp-637685-01
+2026-06-28 · NMATEKLLIENICHIIYP · cosmetic_longevity_adjacent · rank 81 · drp-809968-01
