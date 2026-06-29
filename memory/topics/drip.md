@@ -211,3 +211,4 @@
 2026-06-28 · FFNWEMICMFPRSKFWNL · cosmetic_longevity_adjacent · rank 78 · drp-300520-04
 2026-06-28 · PWEWDSLIA · cosmetic_longevity_adjacent · rank 83 · drp-058397-01
 2026-06-29 · CQRMHN · cosmetic_collagen_stimulating · rank 84 · drp-143202-01
+2026-06-29 · TRGKEDLCV · cosmetic_collagen_stimulating · rank 84 · drp-691007-02
