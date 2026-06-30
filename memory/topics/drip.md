@@ -214,3 +214,4 @@
 2026-06-29 · TRGKEDLCV · cosmetic_collagen_stimulating · rank 84 · drp-691007-02
 2026-06-29 · YWIEQHYRE · cosmetic_collagen_stimulating · rank 89 · drp-047540-01
 2026-06-30 · YWR · cosmetic_antiaging_neuromodulator · rank 80 · drp-480096-00
+2026-06-30 · NVTSHPAYSCHIMH · cosmetic_antiaging_neuromodulator · rank 85 · drp-977613-00
