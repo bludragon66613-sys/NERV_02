@@ -218,3 +218,4 @@
 2026-06-30 · WYM · cosmetic_antiaging_neuromodulator · rank 77 · drp-466664-01
 2026-07-01 · FPNRGL · cosmetic_antiwrinkle_lifting · rank 86 · drp-846999-01
 2026-07-01 · IHQLQCTDYVC · cosmetic_antiwrinkle_lifting · rank 87 · drp-376165-03
+2026-07-01 · MWFIPPNQAKWIV · cosmetic_antiwrinkle_lifting · rank 80 · drp-744301-00
