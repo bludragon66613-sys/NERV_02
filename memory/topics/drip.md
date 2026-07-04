@@ -225,3 +225,4 @@
 2026-07-03 · LTISSGAMPA · cosmetic_brightening_depigmentation · rank 84 · drp-186499-02
 2026-07-03 · QIKSNE · cosmetic_brightening_depigmentation · rank 85 · drp-574819-03
 2026-07-03 · VYGETLRWTGFFGWETRTT · cosmetic_brightening_depigmentation · rank 87 · drp-076964-03
+2026-07-04 · NTNGFVSRAIPPQRQMF · cosmetic_antimicrobial_skin · rank 84 · drp-029529-04
