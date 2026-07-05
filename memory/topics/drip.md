@@ -228,3 +228,4 @@
 2026-07-04 · NTNGFVSRAIPPQRQMF · cosmetic_antimicrobial_skin · rank 84 · drp-029529-04
 2026-07-04 · GQPADVEIDI · cosmetic_antimicrobial_skin · rank 78 · drp-946702-03
 2026-07-04 · NSEGQGIVNAP · cosmetic_antimicrobial_skin · rank 86 · drp-023349-03
+2026-07-05 · YHLMNMMTHTVV · cosmetic_antiinflammatory_skin · rank 81 · drp-533079-03
