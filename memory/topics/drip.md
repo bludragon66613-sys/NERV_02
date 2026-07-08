@@ -238,3 +238,4 @@
 2026-07-07 · MSWEYNFYT · cosmetic_hair_growth · rank 89 · drp-875923-01
 2026-07-07 · VYSNDTGTVHKR · cosmetic_hair_growth · rank 88 · drp-511201-03
 2026-07-08 · SFC · cosmetic_eye_area · rank 80 · drp-789747-01
+2026-07-08 · HPLYTSFTKTC · cosmetic_eye_area · rank 88 · drp-139963-03
