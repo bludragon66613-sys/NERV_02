@@ -240,3 +240,4 @@
 2026-07-08 · SFC · cosmetic_eye_area · rank 80 · drp-789747-01
 2026-07-08 · HPLYTSFTKTC · cosmetic_eye_area · rank 88 · drp-139963-03
 2026-07-08 · NSAPFMVY · cosmetic_eye_area · rank 85 · drp-134046-04
+2026-07-09 · ISLMMADPSDRPFQP · cosmetic_lip · rank 80 · drp-551981-03
