@@ -242,3 +242,4 @@
 2026-07-08 · NSAPFMVY · cosmetic_eye_area · rank 85 · drp-134046-04
 2026-07-09 · ISLMMADPSDRPFQP · cosmetic_lip · rank 80 · drp-551981-03
 2026-07-09 · YGHGALVLGARKNEEL · cosmetic_lip · rank 82 · drp-956309-00
+2026-07-09 · LFSPMALMTNEEPRFDY · cosmetic_lip · rank 85 · drp-984711-00
