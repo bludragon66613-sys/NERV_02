@@ -246,3 +246,4 @@
 2026-07-10 · PECD · cosmetic_postprocedure · rank 77 · drp-719462-01
 2026-07-10 · NRFHSQPVSKCDFG · cosmetic_postprocedure · rank 82 · drp-858591-02
 2026-07-10 · HGSPKNDMNGEKYWYNT · cosmetic_postprocedure · rank 86 · drp-586535-02
+2026-07-11 · TCCPNFIQCIPTPELMFSR · cosmetic_cell_penetrating · rank 84 · drp-907081-03
