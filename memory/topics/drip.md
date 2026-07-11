@@ -248,3 +248,4 @@
 2026-07-10 · HGSPKNDMNGEKYWYNT · cosmetic_postprocedure · rank 86 · drp-586535-02
 2026-07-11 · TCCPNFIQCIPTPELMFSR · cosmetic_cell_penetrating · rank 84 · drp-907081-03
 2026-07-11 · TGPEV · cosmetic_cell_penetrating · rank 83 · drp-957115-04
+2026-07-11 · VSNQHPKGPLRKSEFQE · cosmetic_cell_penetrating · rank 85 · drp-248444-01
