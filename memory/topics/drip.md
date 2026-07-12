@@ -251,3 +251,4 @@
 2026-07-11 · VSNQHPKGPLRKSEFQE · cosmetic_cell_penetrating · rank 85 · drp-248444-01
 2026-07-12 · NVFAVPRFRWNRAEVWMIYM · cosmetic_sensory · rank 78 · drp-789596-01
 2026-07-12 · RADTCEEMIRYLQFKMNR · cosmetic_sensory · rank 86 · drp-496016-00
+2026-07-12 · LDEFWHKGEI · cosmetic_sensory · rank 85 · drp-706806-03
