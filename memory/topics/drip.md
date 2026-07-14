@@ -255,3 +255,4 @@
 2026-07-13 · WNHNYTTHSMLGYH · cosmetic_longevity_adjacent · rank 82 · drp-028056-04
 2026-07-13 · IQKA · cosmetic_longevity_adjacent · rank 81 · drp-465217-00
 2026-07-13 · DTGAQ · cosmetic_longevity_adjacent · rank 89 · drp-494146-01
+2026-07-14 · GKFFSKCHANC · cosmetic_collagen_stimulating · rank 83 · drp-902092-02
