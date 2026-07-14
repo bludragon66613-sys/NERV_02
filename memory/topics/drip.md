@@ -257,3 +257,4 @@
 2026-07-13 · DTGAQ · cosmetic_longevity_adjacent · rank 89 · drp-494146-01
 2026-07-14 · GKFFSKCHANC · cosmetic_collagen_stimulating · rank 83 · drp-902092-02
 2026-07-14 · DPEIGA · cosmetic_collagen_stimulating · rank 83 · drp-006990-02
+2026-07-14 · GNG · cosmetic_collagen_stimulating · rank 82 · drp-000064-04
