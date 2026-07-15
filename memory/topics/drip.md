@@ -259,3 +259,4 @@
 2026-07-14 · DPEIGA · cosmetic_collagen_stimulating · rank 83 · drp-006990-02
 2026-07-14 · GNG · cosmetic_collagen_stimulating · rank 82 · drp-000064-04
 2026-07-15 · HCILHDAPVSQKCCGSV · cosmetic_antiaging_neuromodulator · rank 88 · drp-544823-00
+2026-07-15 · IKKRAHYELYQSV · cosmetic_antiaging_neuromodulator · rank 84 · drp-493667-02
