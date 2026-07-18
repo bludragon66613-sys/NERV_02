@@ -269,3 +269,4 @@
 2026-07-17 · LIGFKCRLDIIHLN · cosmetic_wound_healing · rank 85 · drp-738984-03
 2026-07-18 · WDGCDP · cosmetic_brightening_depigmentation · rank 84 · drp-359612-00
 2026-07-18 · CCLKPDPGH · cosmetic_brightening_depigmentation · rank 80 · drp-748717-02
+2026-07-18 · AGEFDYTHK · cosmetic_brightening_depigmentation · rank 83 · drp-111571-02
