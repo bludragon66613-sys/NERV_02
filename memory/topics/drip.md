@@ -270,3 +270,4 @@
 2026-07-18 · WDGCDP · cosmetic_brightening_depigmentation · rank 84 · drp-359612-00
 2026-07-18 · CCLKPDPGH · cosmetic_brightening_depigmentation · rank 80 · drp-748717-02
 2026-07-18 · AGEFDYTHK · cosmetic_brightening_depigmentation · rank 83 · drp-111571-02
+2026-07-19 · GHK · cosmetic_antimicrobial_skin · rank 81 · drp-612516-00
