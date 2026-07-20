@@ -275,3 +275,4 @@
 2026-07-19 · WPWDEMQRSTDGPVT · cosmetic_antimicrobial_skin · rank 84 · drp-694069-00
 2026-07-20 · WHDFGR · cosmetic_antiinflammatory_skin · rank 84 · drp-363799-04
 2026-07-20 · QLGM · cosmetic_antiinflammatory_skin · rank 81 · drp-113248-00
+2026-07-20 · CGPGWNQCQQTDTA · cosmetic_antiinflammatory_skin · rank 80 · drp-393542-01
