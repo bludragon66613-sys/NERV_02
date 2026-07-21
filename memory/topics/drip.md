@@ -278,3 +278,4 @@
 2026-07-20 · CGPGWNQCQQTDTA · cosmetic_antiinflammatory_skin · rank 80 · drp-393542-01
 2026-07-21 · PFPSPIPKQKKRGS · cosmetic_barrier_moisturizing · rank 87 · drp-949528-03
 2026-07-21 · YRFIACPGYACVVGSPF · cosmetic_barrier_moisturizing · rank 82 · drp-619441-01
+2026-07-21 · NLSPNPNSDSRG · cosmetic_barrier_moisturizing · rank 84 · drp-704835-04
