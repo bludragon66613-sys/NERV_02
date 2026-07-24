@@ -285,3 +285,4 @@
 2026-07-23 · PYQP · cosmetic_eye_area · rank 85 · drp-954594-00
 2026-07-23 · CVLNQHTPIEQMPE · cosmetic_eye_area · rank 88 · drp-557482-04
 2026-07-23 · AKSFLKFLCIK · cosmetic_eye_area · rank 81 · drp-598136-02
+2026-07-24 · VGGYPLTKRNAGARWFPDS · cosmetic_lip · rank 84 · drp-145702-00
