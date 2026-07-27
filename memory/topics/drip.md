@@ -294,3 +294,4 @@
 2026-07-26 · CDYMRPDWAIH · cosmetic_cell_penetrating · rank 81 · drp-912119-04
 2026-07-26 · SINMHDDRRERDF · cosmetic_cell_penetrating · rank 86 · drp-682344-02
 2026-07-26 · QQD · cosmetic_cell_penetrating · rank 83 · drp-928099-03
+2026-07-27 · HMLPCMM · cosmetic_sensory · rank 83 · drp-060329-01
