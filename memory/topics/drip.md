@@ -295,3 +295,4 @@
 2026-07-26 · SINMHDDRRERDF · cosmetic_cell_penetrating · rank 86 · drp-682344-02
 2026-07-26 · QQD · cosmetic_cell_penetrating · rank 83 · drp-928099-03
 2026-07-27 · HMLPCMM · cosmetic_sensory · rank 83 · drp-060329-01
+2026-07-27 · GPCKKGQYWMNQMCYPQG · cosmetic_sensory · rank 82 · drp-305238-03
