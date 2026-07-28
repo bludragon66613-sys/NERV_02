@@ -297,3 +297,4 @@
 2026-07-27 · HMLPCMM · cosmetic_sensory · rank 83 · drp-060329-01
 2026-07-27 · GPCKKGQYWMNQMCYPQG · cosmetic_sensory · rank 82 · drp-305238-03
 2026-07-27 · HEFWYDERGWRLC · cosmetic_sensory · rank 88 · drp-456051-01
+2026-07-28 · PDEEFAALV · cosmetic_longevity_adjacent · rank 79 · drp-145934-02
