@@ -304,3 +304,4 @@
 2026-07-29 · IWRPGYAF · cosmetic_collagen_stimulating · rank 85 · drp-742155-01
 2026-07-29 · WCFCNDLWRNWAM · cosmetic_collagen_stimulating · rank 85 · drp-084778-00
 2026-07-30 · HFRCGMPI · cosmetic_antiaging_neuromodulator · rank 83 · drp-519512-01
+2026-07-30 · SPSPVAL · cosmetic_antiaging_neuromodulator · rank 82 · drp-250432-02
