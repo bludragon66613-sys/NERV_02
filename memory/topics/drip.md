@@ -309,3 +309,4 @@
 2026-07-31 · NLMVEQCKNVQCN · cosmetic_antiwrinkle_lifting · rank 78 · drp-425463-00
 2026-07-31 · EWNL · cosmetic_antiwrinkle_lifting · rank 82 · drp-128615-04
 2026-07-31 · VFWVAMHFNWAVP · cosmetic_antiwrinkle_lifting · rank 88 · drp-025082-01
+2026-08-01 · KFY · cosmetic_wound_healing · rank 86 · drp-033027-01
