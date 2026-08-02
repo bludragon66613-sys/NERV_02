@@ -312,3 +312,4 @@
 2026-08-01 · KFY · cosmetic_wound_healing · rank 86 · drp-033027-01
 2026-08-01 · GVKKCYMTNEHQYFREF · cosmetic_wound_healing · rank 88 · drp-807093-03
 2026-08-01 · TCSNYIFYIPI · cosmetic_wound_healing · rank 85 · drp-089757-03
+2026-08-02 · TWTVVP · cosmetic_brightening_depigmentation · rank 82 · drp-554207-01
