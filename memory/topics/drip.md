@@ -320,3 +320,4 @@
 2026-08-03 · GTKTWRSKDEGGSHALD · cosmetic_antimicrobial_skin · rank 83 · drp-279844-00
 2026-08-04 · ACMHTFFCM · cosmetic_antiinflammatory_skin · rank 83 · drp-150004-02
 2026-08-04 · DPFHW · cosmetic_antiinflammatory_skin · rank 85 · drp-429955-00
+2026-08-04 · ERS · cosmetic_antiinflammatory_skin · rank 79 · drp-800726-02
