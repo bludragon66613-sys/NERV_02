@@ -321,3 +321,4 @@
 2026-08-04 · ACMHTFFCM · cosmetic_antiinflammatory_skin · rank 83 · drp-150004-02
 2026-08-04 · DPFHW · cosmetic_antiinflammatory_skin · rank 85 · drp-429955-00
 2026-08-04 · ERS · cosmetic_antiinflammatory_skin · rank 79 · drp-800726-02
+2026-08-05 · ALAAQ · cosmetic_barrier_moisturizing · rank 86 · drp-478164-04
