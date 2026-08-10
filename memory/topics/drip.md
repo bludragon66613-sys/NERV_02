@@ -336,3 +336,4 @@
 2026-08-09 · RPGQKPPWDRENSRDW · cosmetic_postprocedure · rank 87 · drp-230113-04
 2026-08-09 · FLFDMLNGTHWFAVYGE · cosmetic_postprocedure · rank 81 · drp-311713-02
 2026-08-09 · VMPSVTNVHQCGME · cosmetic_postprocedure · rank 83 · drp-764815-02
+2026-08-10 · QFKHQFY · cosmetic_cell_penetrating · rank 86 · drp-394382-03
