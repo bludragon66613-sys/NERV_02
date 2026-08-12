@@ -342,3 +342,4 @@
 2026-08-11 · VCGCAVCE · cosmetic_sensory · rank 83 · drp-503070-00
 2026-08-11 · YWHSIMKTKNHLSA · cosmetic_sensory · rank 80 · drp-644442-00
 2026-08-11 · ALMSKIFWAATTS · cosmetic_sensory · rank 85 · drp-314798-04
+2026-08-12 · KGGQPLSHEECENSFFVPS · cosmetic_longevity_adjacent · rank 82 · drp-152437-01
