@@ -348,3 +348,4 @@
 2026-08-13 · SNPCEA · cosmetic_collagen_stimulating · rank 87 · drp-795927-04
 2026-08-13 · PDTGIL · cosmetic_collagen_stimulating · rank 84 · drp-517327-04
 2026-08-13 · ADKDIMNWMMY · cosmetic_collagen_stimulating · rank 87 · drp-074972-00
+2026-08-14 · LPMLCRGIMDNYEITLEKST · cosmetic_antiaging_neuromodulator · rank 84 · drp-973435-02
