@@ -366,3 +366,4 @@
 2026-08-19 · FLCTGP · cosmetic_antiinflammatory_skin · rank 88 · drp-464451-04
 2026-08-19 · RAHRKMAAG · cosmetic_antiinflammatory_skin · rank 80 · drp-233189-02
 2026-08-19 · CGNVLLFLMWPRKEYHQGHR · cosmetic_antiinflammatory_skin · rank 79 · drp-487095-02
+2026-08-20 · DGTPFKPIATHVPE · cosmetic_barrier_moisturizing · rank 84 · drp-934944-04
