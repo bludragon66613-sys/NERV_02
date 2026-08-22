@@ -374,3 +374,4 @@
 2026-08-21 · HRCMLDHEVENIDV · cosmetic_hair_growth · rank 89 · drp-203384-02
 2026-08-22 · VHHDETAYWAPFT · cosmetic_eye_area · rank 81 · drp-436440-03
 2026-08-22 · LHH · cosmetic_eye_area · rank 80 · drp-741385-02
+2026-08-22 · CYQMLSYQEGAQH · cosmetic_eye_area · rank 87 · drp-494311-02
