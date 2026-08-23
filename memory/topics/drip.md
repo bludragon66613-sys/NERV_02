@@ -375,3 +375,4 @@
 2026-08-22 · VHHDETAYWAPFT · cosmetic_eye_area · rank 81 · drp-436440-03
 2026-08-22 · LHH · cosmetic_eye_area · rank 80 · drp-741385-02
 2026-08-22 · CYQMLSYQEGAQH · cosmetic_eye_area · rank 87 · drp-494311-02
+2026-08-23 · FTTGHS · cosmetic_lip · rank 83 · drp-918180-01
