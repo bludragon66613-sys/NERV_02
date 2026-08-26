@@ -384,3 +384,4 @@
 2026-08-25 · EWA · cosmetic_cell_penetrating · rank 82 · drp-921825-03
 2026-08-25 · TPDDSCQVTK · cosmetic_cell_penetrating · rank 85 · drp-324028-00
 2026-08-25 · FGGCAEL · cosmetic_cell_penetrating · rank 88 · drp-929773-03
+2026-08-26 · FHI · cosmetic_sensory · rank 82 · drp-464326-04
