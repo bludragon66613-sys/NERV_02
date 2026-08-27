@@ -386,3 +386,4 @@
 2026-08-25 · FGGCAEL · cosmetic_cell_penetrating · rank 88 · drp-929773-03
 2026-08-26 · FHI · cosmetic_sensory · rank 82 · drp-464326-04
 2026-08-26 · RVKHNSMQE · cosmetic_sensory · rank 85 · drp-715503-02
+2026-08-27 · PMDKLFPRNQNVGI · cosmetic_longevity_adjacent · rank 87 · drp-139894-00
