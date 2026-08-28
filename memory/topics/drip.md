@@ -388,3 +388,4 @@
 2026-08-26 · RVKHNSMQE · cosmetic_sensory · rank 85 · drp-715503-02
 2026-08-27 · PMDKLFPRNQNVGI · cosmetic_longevity_adjacent · rank 87 · drp-139894-00
 2026-08-27 · QGCMQYLHNEPATVEWDHIK · cosmetic_longevity_adjacent · rank 85 · drp-783653-03
+2026-08-28 · SPARHPKVLGG · cosmetic_collagen_stimulating · rank 80 · drp-253481-02
