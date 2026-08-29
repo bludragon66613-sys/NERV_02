@@ -392,3 +392,4 @@
 2026-08-28 · AIHENQ · cosmetic_collagen_stimulating · rank 82 · drp-182193-01
 2026-08-29 · VDMWNCFCWAC · cosmetic_antiaging_neuromodulator · rank 83 · drp-830941-02
 2026-08-29 · AWQDH · cosmetic_antiaging_neuromodulator · rank 84 · drp-252417-02
+2026-08-29 · KFQTPNENNTM · cosmetic_antiaging_neuromodulator · rank 85 · drp-327046-00
