@@ -390,3 +390,4 @@
 2026-08-27 · QGCMQYLHNEPATVEWDHIK · cosmetic_longevity_adjacent · rank 85 · drp-783653-03
 2026-08-28 · SPARHPKVLGG · cosmetic_collagen_stimulating · rank 80 · drp-253481-02
 2026-08-28 · AIHENQ · cosmetic_collagen_stimulating · rank 82 · drp-182193-01
+2026-08-29 · VDMWNCFCWAC · cosmetic_antiaging_neuromodulator · rank 83 · drp-830941-02
