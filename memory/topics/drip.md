@@ -394,3 +394,4 @@
 2026-08-29 · AWQDH · cosmetic_antiaging_neuromodulator · rank 84 · drp-252417-02
 2026-08-29 · KFQTPNENNTM · cosmetic_antiaging_neuromodulator · rank 85 · drp-327046-00
 2026-08-29 · EPIAQNWWRQQVMLM · cosmetic_antiaging_neuromodulator · rank 82 · drp-791707-01
+2026-08-30 · MEEE · cosmetic_antiwrinkle_lifting · rank 78 · drp-873785-03
