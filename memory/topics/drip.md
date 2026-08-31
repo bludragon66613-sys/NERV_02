@@ -397,3 +397,4 @@
 2026-08-30 · MEEE · cosmetic_antiwrinkle_lifting · rank 78 · drp-873785-03
 2026-08-30 · GHLVVCGMFYERTC · cosmetic_antiwrinkle_lifting · rank 83 · drp-125099-04
 2026-08-30 · QLLMYANKIYKMIME · cosmetic_antiwrinkle_lifting · rank 82 · drp-306256-03
+2026-08-31 · NGDCGSANRPYCH · cosmetic_wound_healing · rank 78 · drp-435459-02
