@@ -400,3 +400,4 @@
 2026-08-31 · NGDCGSANRPYCH · cosmetic_wound_healing · rank 78 · drp-435459-02
 2026-08-31 · PKATS · cosmetic_wound_healing · rank 82 · drp-395308-00
 2026-09-01 · KIYSDAWRFWTVFERFF · cosmetic_brightening_depigmentation · rank 83 · drp-828241-00
+2026-09-01 · QIFCSSYRYE · cosmetic_brightening_depigmentation · rank 86 · drp-990789-03
