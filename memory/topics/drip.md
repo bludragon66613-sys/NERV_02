@@ -403,3 +403,4 @@
 2026-09-01 · QIFCSSYRYE · cosmetic_brightening_depigmentation · rank 86 · drp-990789-03
 2026-09-01 · FVMAW · cosmetic_brightening_depigmentation · rank 84 · drp-713431-00
 2026-09-01 · DYQSQPTIHFPITLVFMQ · cosmetic_brightening_depigmentation · rank 82 · drp-815647-02
+2026-09-02 · ACYFYTVNTQNYAFV · cosmetic_antimicrobial_skin · rank 85 · drp-327793-01
