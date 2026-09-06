@@ -415,3 +415,4 @@
 2026-09-05 · PCHPIAREQPTEIW · cosmetic_hair_growth · rank 78 · drp-713603-02
 2026-09-05 · GNSPKGLE · cosmetic_hair_growth · rank 84 · drp-170653-04
 2026-09-05 · TQIVHVMFPHIETTWG · cosmetic_hair_growth · rank 86 · drp-700862-03
+2026-09-06 · KNWND · cosmetic_eye_area · rank 80 · drp-976963-03
