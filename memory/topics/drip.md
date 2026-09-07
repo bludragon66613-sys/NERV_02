@@ -418,3 +418,4 @@
 2026-09-06 · KNWND · cosmetic_eye_area · rank 80 · drp-976963-03
 2026-09-06 · FIFP · cosmetic_eye_area · rank 81 · drp-238554-03
 2026-09-06 · SPNTRVMGWDIINVEPV · cosmetic_eye_area · rank 87 · drp-676298-02
+2026-09-07 · GVTNCQHPFGKHKEWP · cosmetic_lip · rank 85 · drp-258722-03
