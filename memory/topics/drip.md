@@ -430,3 +430,4 @@
 2026-09-10 · WCGPEFFTTEGFTIH · cosmetic_sensory · rank 87 · drp-866804-00
 2026-09-10 · AQKKV · cosmetic_sensory · rank 86 · drp-849549-01
 2026-09-10 · SEAMNEIPEIHNPA · cosmetic_sensory · rank 76 · drp-921599-04
+2026-09-11 · CPITEND · cosmetic_longevity_adjacent · rank 80 · drp-096469-00
