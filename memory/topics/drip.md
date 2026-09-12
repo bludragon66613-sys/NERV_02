@@ -435,3 +435,4 @@
 2026-09-11 · AVC · cosmetic_longevity_adjacent · rank 83 · drp-783148-02
 2026-09-12 · YKSGTDGAWGHWMFNH · cosmetic_collagen_stimulating · rank 87 · drp-043931-02
 2026-09-12 · SHIGTLSVAPEIRA · cosmetic_collagen_stimulating · rank 85 · drp-881232-01
+2026-09-12 · ENTYDSITM · cosmetic_collagen_stimulating · rank 81 · drp-740531-03
