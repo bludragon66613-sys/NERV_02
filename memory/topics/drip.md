@@ -438,3 +438,4 @@
 2026-09-12 · ENTYDSITM · cosmetic_collagen_stimulating · rank 81 · drp-740531-03
 2026-09-13 · NEYIHIPYY · cosmetic_antiaging_neuromodulator · rank 86 · drp-111239-02
 2026-09-13 · YPIPKKCC · cosmetic_antiaging_neuromodulator · rank 85 · drp-158988-01
+2026-09-13 · MFGFPRK · cosmetic_antiaging_neuromodulator · rank 82 · drp-951414-04
