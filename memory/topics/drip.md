@@ -440,3 +440,4 @@
 2026-09-13 · YPIPKKCC · cosmetic_antiaging_neuromodulator · rank 85 · drp-158988-01
 2026-09-13 · MFGFPRK · cosmetic_antiaging_neuromodulator · rank 82 · drp-951414-04
 2026-09-14 · THYCHNDVNK · cosmetic_antiwrinkle_lifting · rank 81 · drp-812234-04
+2026-09-14 · DWFNQ · cosmetic_antiwrinkle_lifting · rank 83 · drp-123002-03
