@@ -451,3 +451,4 @@
 2026-09-17 · DFGRITHLPSGTWL · cosmetic_antimicrobial_skin · rank 88 · drp-097235-02
 2026-09-17 · LIVKMLRWY · cosmetic_antimicrobial_skin · rank 80 · drp-169101-01
 2026-09-17 · VVGINMHFRQFFYYS · cosmetic_antimicrobial_skin · rank 84 · drp-738889-03
+2026-09-18 · PITMKY · cosmetic_antiinflammatory_skin · rank 85 · drp-085726-04
