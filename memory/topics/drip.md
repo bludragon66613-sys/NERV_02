@@ -454,3 +454,4 @@
 2026-09-18 · PITMKY · cosmetic_antiinflammatory_skin · rank 85 · drp-085726-04
 2026-09-18 · STRTLA · cosmetic_antiinflammatory_skin · rank 87 · drp-965873-03
 2026-09-18 · DHVLMDKQSKY · cosmetic_antiinflammatory_skin · rank 83 · drp-900780-03
+2026-09-19 · KHFV · cosmetic_barrier_moisturizing · rank 79 · drp-345195-02
