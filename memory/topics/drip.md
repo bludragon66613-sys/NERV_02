@@ -456,3 +456,4 @@
 2026-09-18 · DHVLMDKQSKY · cosmetic_antiinflammatory_skin · rank 83 · drp-900780-03
 2026-09-19 · KHFV · cosmetic_barrier_moisturizing · rank 79 · drp-345195-02
 2026-09-19 · YGLDV · cosmetic_barrier_moisturizing · rank 83 · drp-655879-04
+2026-09-19 · TANFPVT · cosmetic_barrier_moisturizing · rank 80 · drp-330931-02
