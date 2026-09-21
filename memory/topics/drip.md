@@ -461,3 +461,4 @@
 2026-09-20 · CVADTRKGTIAHW · cosmetic_hair_growth · rank 84 · drp-819081-00
 2026-09-20 · NQSSRNTVWFPT · cosmetic_hair_growth · rank 83 · drp-511652-00
 2026-09-21 · TNFRAYFPP · cosmetic_eye_area · rank 83 · drp-217071-03
+2026-09-21 · TVH · cosmetic_eye_area · rank 81 · drp-003957-00
