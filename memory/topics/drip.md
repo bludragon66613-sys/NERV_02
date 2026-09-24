@@ -468,3 +468,4 @@
 2026-09-22 · DLFMNGVMEFETSTSSFQ · cosmetic_lip · rank 81 · drp-180435-03
 2026-09-23 · ECPHCAEWPRFSVH · cosmetic_postprocedure · rank 89 · drp-875163-02
 2026-09-23 · RQVW · cosmetic_postprocedure · rank 85 · drp-438073-04
+2026-09-24 · CHIDQWVTYYGQDK · cosmetic_cell_penetrating · rank 86 · drp-229114-02
