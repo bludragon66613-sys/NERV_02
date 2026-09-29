@@ -483,3 +483,4 @@
 2026-09-28 · QPAHANMC · cosmetic_antiaging_neuromodulator · rank 82 · drp-832977-02
 2026-09-28 · PQNKGVTVPQAERVSPD · cosmetic_antiaging_neuromodulator · rank 89 · drp-300429-00
 2026-09-28 · DNHILW · cosmetic_antiaging_neuromodulator · rank 87 · drp-634144-00
+2026-09-29 · SAPN · cosmetic_antiwrinkle_lifting · rank 83 · drp-771638-01
