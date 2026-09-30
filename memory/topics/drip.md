@@ -487,3 +487,4 @@
 2026-09-29 · DFGEGPPGME · cosmetic_antiwrinkle_lifting · rank 84 · drp-009960-00
 2026-09-29 · FKKFFMHYGELMGVFPHPHK · cosmetic_antiwrinkle_lifting · rank 79 · drp-174680-04
 2026-09-30 · HNEDLIFLLH · cosmetic_wound_healing · rank 83 · drp-321473-01
+2026-09-30 · EHTGTTGVPCMW · cosmetic_wound_healing · rank 80 · drp-631916-02
