@@ -489,3 +489,4 @@
 2026-09-30 · HNEDLIFLLH · cosmetic_wound_healing · rank 83 · drp-321473-01
 2026-09-30 · EHTGTTGVPCMW · cosmetic_wound_healing · rank 80 · drp-631916-02
 2026-09-30 · WQGAHC · cosmetic_wound_healing · rank 78 · drp-494388-00
+2026-10-01 · YSPYLHDWRLREWKNIVF · cosmetic_brightening_depigmentation · rank 82 · drp-950897-02
