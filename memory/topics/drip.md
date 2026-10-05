@@ -501,3 +501,4 @@
 2026-10-04 · MGK · cosmetic_barrier_moisturizing · rank 88 · drp-592273-00
 2026-10-04 · ARTAPPDNQ · cosmetic_barrier_moisturizing · rank 85 · drp-048399-04
 2026-10-04 · RKFFMHE · cosmetic_barrier_moisturizing · rank 83 · drp-418075-04
+2026-10-05 · YYKPPFFEVTWLRS · cosmetic_hair_growth · rank 85 · drp-374220-03
