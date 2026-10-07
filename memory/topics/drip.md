@@ -507,3 +507,4 @@
 2026-10-06 · HYVWEQAKRFHIE · cosmetic_eye_area · rank 88 · drp-837843-03
 2026-10-06 · LDEVPINLISVII · cosmetic_eye_area · rank 85 · drp-070083-00
 2026-10-06 · CKEGCRW · cosmetic_eye_area · rank 84 · drp-752725-00
+2026-10-07 · GPQTSP · cosmetic_lip · rank 79 · drp-062289-02
