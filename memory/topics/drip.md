@@ -509,3 +509,4 @@
 2026-10-06 · CKEGCRW · cosmetic_eye_area · rank 84 · drp-752725-00
 2026-10-07 · GPQTSP · cosmetic_lip · rank 79 · drp-062289-02
 2026-10-07 · HECAEFIYGP · cosmetic_lip · rank 81 · drp-947323-01
+2026-10-07 · KIA · cosmetic_lip · rank 80 · drp-801329-00
