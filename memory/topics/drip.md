@@ -514,3 +514,4 @@
 2026-10-08 · QTRHFDLEKCF · cosmetic_postprocedure · rank 78 · drp-986058-04
 2026-10-08 · FAKHIRTWEENNNAEPPP · cosmetic_postprocedure · rank 90 · drp-942075-03
 2026-10-09 · GCNIKCVRNFDLFR · cosmetic_cell_penetrating · rank 87 · drp-469091-03
+2026-10-09 · HERPRITC · cosmetic_cell_penetrating · rank 90 · drp-808955-03
