@@ -518,3 +518,4 @@
 2026-10-09 · WPHR · cosmetic_cell_penetrating · rank 85 · drp-815139-03
 2026-10-10 · RVEYGQGQMMASSIFYRE · cosmetic_sensory · rank 87 · drp-238936-01
 2026-10-10 · DFRSHKFNTQQTLRVIKI · cosmetic_sensory · rank 80 · drp-653169-00
+2026-10-10 · AGPMPV · cosmetic_sensory · rank 90 · drp-519027-01
