@@ -519,3 +519,4 @@
 2026-10-10 · RVEYGQGQMMASSIFYRE · cosmetic_sensory · rank 87 · drp-238936-01
 2026-10-10 · DFRSHKFNTQQTLRVIKI · cosmetic_sensory · rank 80 · drp-653169-00
 2026-10-10 · AGPMPV · cosmetic_sensory · rank 90 · drp-519027-01
+2026-10-11 · THFCLQLFVWMA · cosmetic_longevity_adjacent · rank 91 · drp-798189-02
