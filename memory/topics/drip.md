@@ -522,3 +522,4 @@
 2026-10-11 · THFCLQLFVWMA · cosmetic_longevity_adjacent · rank 91 · drp-798189-02
 2026-10-11 · HYLTSRGRMTLVIQYDIKGY · cosmetic_longevity_adjacent · rank 83 · drp-864818-04
 2026-10-11 · YRLIHPSPRVENCSPQK · cosmetic_longevity_adjacent · rank 90 · drp-396129-00
+2026-10-12 · HVHYRWSRR · cosmetic_collagen_stimulating · rank 87 · drp-016749-01
