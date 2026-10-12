@@ -524,3 +524,4 @@
 2026-10-11 · YRLIHPSPRVENCSPQK · cosmetic_longevity_adjacent · rank 90 · drp-396129-00
 2026-10-12 · HVHYRWSRR · cosmetic_collagen_stimulating · rank 87 · drp-016749-01
 2026-10-12 · ESFWWRPPTMYHLHVMNFG · cosmetic_collagen_stimulating · rank 88 · drp-379975-01
+2026-10-12 · YNKCHYNKFRCY · cosmetic_collagen_stimulating · rank 83 · drp-019968-01
