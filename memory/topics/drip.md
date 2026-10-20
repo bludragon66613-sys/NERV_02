@@ -547,3 +547,4 @@
 2026-10-19 · TWPVVMRYRQAERWSRMMP · cosmetic_barrier_moisturizing · rank 84 · drp-937805-01
 2026-10-19 · VESLWVWWW · cosmetic_barrier_moisturizing · rank 85 · drp-301694-00
 2026-10-20 · ELYQAFSTVCLYYMPDI · cosmetic_hair_growth · rank 84 · drp-139214-01
+2026-10-20 · PVVPVVHSHWNPTWL · cosmetic_hair_growth · rank 81 · drp-202296-02
