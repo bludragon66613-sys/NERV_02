@@ -550,3 +550,4 @@
 2026-10-20 · PVVPVVHSHWNPTWL · cosmetic_hair_growth · rank 81 · drp-202296-02
 2026-10-20 · DEMIWCQWNYEDWP · cosmetic_hair_growth · rank 80 · drp-746667-03
 2026-10-21 · DQSGWYDGEQVSITCIVG · cosmetic_eye_area · rank 81 · drp-531988-01
+2026-10-21 · IKMANADP · cosmetic_eye_area · rank 84 · drp-314106-03
