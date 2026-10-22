@@ -552,3 +552,4 @@
 2026-10-21 · DQSGWYDGEQVSITCIVG · cosmetic_eye_area · rank 81 · drp-531988-01
 2026-10-21 · IKMANADP · cosmetic_eye_area · rank 84 · drp-314106-03
 2026-10-21 · KVHNETCWDN · cosmetic_eye_area · rank 85 · drp-618678-01
+2026-10-22 · TQSGVGCQFQAW · cosmetic_lip · rank 81 · drp-206263-00
