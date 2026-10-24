@@ -561,3 +561,4 @@
 2026-10-24 · FEAFIMDFGITFPVSHHYYN · cosmetic_cell_penetrating · rank 81 · drp-342851-02
 2026-10-24 · GLIKY · cosmetic_cell_penetrating · rank 90 · drp-618363-01
 2026-10-24 · KHKEMICVSDEQEICRIGFW · cosmetic_cell_penetrating · rank 82 · drp-362407-01
+2026-10-24 · ARILWYSVHDNECTMKMVQ · cosmetic_cell_penetrating · rank 86 · drp-764415-01
