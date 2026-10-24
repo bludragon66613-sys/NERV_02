@@ -560,3 +560,4 @@
 2026-10-23 · HVLADIIYMRN · cosmetic_postprocedure · rank 84 · drp-380967-04
 2026-10-24 · FEAFIMDFGITFPVSHHYYN · cosmetic_cell_penetrating · rank 81 · drp-342851-02
 2026-10-24 · GLIKY · cosmetic_cell_penetrating · rank 90 · drp-618363-01
+2026-10-24 · KHKEMICVSDEQEICRIGFW · cosmetic_cell_penetrating · rank 82 · drp-362407-01
