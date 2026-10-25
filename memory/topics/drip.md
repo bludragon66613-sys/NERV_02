@@ -563,3 +563,4 @@
 2026-10-24 · KHKEMICVSDEQEICRIGFW · cosmetic_cell_penetrating · rank 82 · drp-362407-01
 2026-10-24 · ARILWYSVHDNECTMKMVQ · cosmetic_cell_penetrating · rank 86 · drp-764415-01
 2026-10-25 · FFFTDCKENSHYIDKSIDS · cosmetic_sensory · rank 88 · drp-300364-00
+2026-10-25 · KQDLRTSLFILMKHYRM · cosmetic_sensory · rank 86 · drp-630038-03
