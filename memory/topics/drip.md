@@ -567,3 +567,4 @@
 2026-10-25 · KHEYANTQEPSR · cosmetic_sensory · rank 84 · drp-524120-03
 2026-10-26 · QQLVF · cosmetic_longevity_adjacent · rank 84 · drp-795245-04
 2026-10-26 · QSIKRVQQHYNGIKWAH · cosmetic_longevity_adjacent · rank 88 · drp-392641-02
+2026-10-27 · LTAMQ · cosmetic_collagen_stimulating · rank 89 · drp-642621-00
