@@ -570,3 +570,4 @@
 2026-10-27 · LTAMQ · cosmetic_collagen_stimulating · rank 89 · drp-642621-00
 2026-10-27 · LHKDFVLYVD · cosmetic_collagen_stimulating · rank 83 · drp-326323-03
 2026-10-27 · FMMGITKRIMGCGLFPGDMM · cosmetic_collagen_stimulating · rank 80 · drp-677951-00
+2026-10-28 · MWDATRHRIWHPEH · cosmetic_antiaging_neuromodulator · rank 83 · drp-421233-03
