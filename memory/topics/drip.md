@@ -584,3 +584,4 @@
 2026-10-31 · QVNDNFEHCM · cosmetic_brightening_depigmentation · rank 83 · drp-582530-03
 2026-11-01 · DEDEWSFKEVQMAYTLRV · cosmetic_antimicrobial_skin · rank 85 · drp-995435-03
 2026-11-01 · LYIIQNAHCVVQPGEHADR · cosmetic_antimicrobial_skin · rank 83 · drp-891960-03
+2026-11-01 · MGQ · cosmetic_antimicrobial_skin · rank 83 · drp-318824-02
