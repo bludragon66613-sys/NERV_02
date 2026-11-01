@@ -582,3 +582,4 @@
 2026-10-31 · KTDACGTYE · cosmetic_brightening_depigmentation · rank 86 · drp-861762-03
 2026-10-31 · CYV · cosmetic_brightening_depigmentation · rank 81 · drp-497933-03
 2026-10-31 · QVNDNFEHCM · cosmetic_brightening_depigmentation · rank 83 · drp-582530-03
+2026-11-01 · DEDEWSFKEVQMAYTLRV · cosmetic_antimicrobial_skin · rank 85 · drp-995435-03
