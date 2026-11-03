@@ -588,3 +588,4 @@
 2026-11-02 · REEIGRNKTCNESFRHEG · cosmetic_antiinflammatory_skin · rank 86 · drp-478356-03
 2026-11-02 · VRKEFIC · cosmetic_antiinflammatory_skin · rank 83 · drp-845113-02
 2026-11-02 · LNGSQVRRLHWG · cosmetic_antiinflammatory_skin · rank 85 · drp-737600-04
+2026-11-03 · IEYGSQWFAGVHYYSSI · cosmetic_barrier_moisturizing · rank 83 · drp-138561-01
