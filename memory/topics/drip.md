@@ -597,3 +597,4 @@
 2026-11-05 · GDPI · cosmetic_eye_area · rank 82 · drp-719389-01
 2026-11-05 · LRECSQLTVGHN · cosmetic_eye_area · rank 85 · drp-872629-01
 2026-11-06 · SWCECWIKWYCWHL · cosmetic_lip · rank 83 · drp-859330-00
+2026-11-06 · CHHGNFIEWQKEFV · cosmetic_lip · rank 88 · drp-144021-00
