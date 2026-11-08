@@ -603,3 +603,4 @@
 2026-11-07 · HGFVL · cosmetic_postprocedure · rank 85 · drp-720152-00
 2026-11-07 · MDPYMYEVGWS · cosmetic_postprocedure · rank 83 · drp-715104-02
 2026-11-08 · AKYNAYTEGGFRHPF · cosmetic_cell_penetrating · rank 85 · drp-400157-00
+2026-11-08 · HSRMANCGKRTMRHNGVCFF · cosmetic_cell_penetrating · rank 85 · drp-250796-00
