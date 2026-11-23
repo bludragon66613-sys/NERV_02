@@ -626,3 +626,4 @@
 2026-11-22 · SITWCLCIFANNYFFYK · cosmetic_postprocedure · rank 83 · drp-780636-04
 2026-11-22 · NAVNVWRWVIRRG · cosmetic_postprocedure · rank 83 · drp-836718-02
 2026-11-22 · VISC · cosmetic_postprocedure · rank 85 · drp-385203-04
+2026-11-23 · AGVCIK · cosmetic_cell_penetrating · rank 82 · drp-297139-02
