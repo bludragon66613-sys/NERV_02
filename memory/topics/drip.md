@@ -628,3 +628,4 @@
 2026-11-22 · VISC · cosmetic_postprocedure · rank 85 · drp-385203-04
 2026-11-23 · AGVCIK · cosmetic_cell_penetrating · rank 82 · drp-297139-02
 2026-11-23 · VMDEAF · cosmetic_cell_penetrating · rank 82 · drp-909296-00
+2026-11-24 · QRTSYTEKAIHNWYA · cosmetic_sensory · rank 85 · drp-681036-00
