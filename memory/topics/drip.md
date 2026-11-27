@@ -634,3 +634,4 @@
 2026-11-25 · NTEQQFWLTCQH · cosmetic_longevity_adjacent · rank 82 · drp-414810-03
 2026-11-26 · GHSSLF · cosmetic_collagen_stimulating · rank 83 · drp-935037-00
 2026-11-26 · IVADQDHLKMQYMNESLGRM · cosmetic_collagen_stimulating · rank 89 · drp-416974-01
+2026-11-27 · ERVWYHEPWHSVPCPQ · cosmetic_antiaging_neuromodulator · rank 83 · drp-427443-01
