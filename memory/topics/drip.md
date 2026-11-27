@@ -635,3 +635,4 @@
 2026-11-26 · GHSSLF · cosmetic_collagen_stimulating · rank 83 · drp-935037-00
 2026-11-26 · IVADQDHLKMQYMNESLGRM · cosmetic_collagen_stimulating · rank 89 · drp-416974-01
 2026-11-27 · ERVWYHEPWHSVPCPQ · cosmetic_antiaging_neuromodulator · rank 83 · drp-427443-01
+2026-11-27 · GNHQEAQLR · cosmetic_antiaging_neuromodulator · rank 87 · drp-122620-04
